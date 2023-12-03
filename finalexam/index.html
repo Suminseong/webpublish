@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=Noto+Sans&family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--폰트어썸-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header><!--positio fixed 0,0,0-->
+        <div class="conpanyAct">
+            <a class="companyLogo"></a>
+            <ul class="companyNav">
+                <li><a href="#">Our Games</a></li>
+                <li><a href="#">News</a></li>
+            </ul>
+        </div>
+        <div class="navbar"><!--투명도 0.8-->
+            <div class="navbar_gLogo">
+                <a class="gamelogo" href="index.html"></a>
+            </div>
+            <ul class="navbar_nav">
+                <li><a href="newinfo.html">새소식</a></li>
+                <li><a href="notification.html">공지사항</a></li>
+                <li><a href="camp.html">모험가 캠프</a></li>
+                <li><a href="guide.html">신참가이드</a></li>
+                <li><a href="auction.html">길드거래소</a></li>
+                <li><a href="cutomersevice.html">고객센터</a></li>
+                <li><a href="threads,html">자유게시판</a></li>
+                <li><a href="download.html">다운로드</a></li>
+            </ul>
+            <div class="navbar_user">
+                <a class="start" href="#"></a><!--게임플레이-->
+                <a class="user" href="#"></a><!--유저아이콘-->
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <video src="intr.mp4" muted autoplay loop></video><!--미지원시 검은 화면으로 나올 것. 동영상을 링크로 넣는 방법은 없을까?-->
+        <div class="intr_textbox">
+            <h1>모험, 보물, 그리고 죽음</h1>
+            <p class="p_20px">살아남는 자에게는 무궁한 영광 있으리</p>
+            <a class="startbtn">시작하기</a>
+        </div>
+    </div>
+    <section class="index_section1">
+        <div class="frame"><!--frame 태그는 좌우 여백을 지정함.-->
+            <img src="">
+            <div class="textbox">
+                <h3>이것은 당신의 죽음으로 완성되는 이야기</h3>
+                <p class="p_16px">당신이 용사가 되었든, 은둔형 백수가 되었든, 죽음은 그런 뒷 사정 따위 신경쓰지 않습니다. 
+                    이야기의 결말은 언제나 ‘당신은 사망했습니다’로 맺어지게 됩니다.</p>
+            </div>
+        </div>
+    </section>
+    <section class="index_section2">
+        <div class="frame">
+            <img class="img1" src="">
+            <img class="img2" src="">
+            <img class="img3" src="">
+            <div class="textbox">
+                <h3>한계까지 강요되는 선택과 결정</h3>
+                <p class="p_16px">세상은 당신에게 우호적이지 않습니다. 매 순간 당신은 선택을 강요받고, 그 결정에 후회하게 되겠죠.
+                    중요한 것은, 어떤 결정을 내리고, 어떤 결과를 맞이하든 그것은 당신의 책임이라는 점 입니다.</p>
+            </div>
+            <a class="morebtn btn_14px">더보기</a>
+        </div>
+    </section>
+    <section class="index_section3">
+        <div class="frame">
+            <h3>끝없이 펼쳐진 오픈월드, 다양한 기후와 환경</h3>
+            <p class="p_16px">완전히 개방된 오픈월드와 사실적인 날씨, 입체적으로 설계된 생태 환경속에서
+                때로는 대자연과의 사투를 벌여야 할 수도 있습니다.</p>
+            <a class="morebtn btn_14px">더보기</a>
+        </div>
+    </section>
+    <section class="index_section4">
+        <div class="frame">
+            <h2>직업군</h2>
+            <div class="chart"><!--flex 각 3 1 1 1 1 1 줬다가 hover하는거 3으로 바뀌게, 밑의 hoverswitch display none 조정-->
+                <div class="charbox1 char_image"><img src="https://i.ibb.co/yFLD5cf/ben-donley-moneyshot2.png"></div>
+                <div class="charbox2 char_image"><img src="https://i.postimg.cc/3Rcb18Ns/magcian.png"></div>
+                <div class="charbox3 char_image"><img src="https://i.postimg.cc/fW6MTZCq/hunter.png"></div>
+                <div class="charbox4 char_image"><img src="https://i.ibb.co/jDzRWWB/explorer.png"></div>
+                <div class="charbox5 char_image"><img src="https://i.postimg.cc/qvNccsyv/vagabond.png"></div>
+                <div class="charbox6 char_image"><img src="https://i.postimg.cc/SKpXXCG5/you.png"></div>
+            </div>
+            <div class="hoverswitch1">
+                <h3>MERCENARY</h3>
+                <p class="p_16px">전쟁이 벌어지고 피가 흐를 수록 용병이 할 일은 더욱 많을것입니다.
+                    칼밥먹고 사는 더러운 놈이라는 소리를 듣지만, 아무렴 어떤가요? 피묻은 돈이 더욱 두둑한 법입니다.</p>
+                <a class="morebtn btn_14px" href="#">더보기</a>
+            </div>
+            <div class="hoverswitch2">
+                <h3>MAGICIAN</h3>
+                <p class="p_16px">매지션은 자연의 마나와 소통하며 독특한 현상인 마법을 구현합니다. 
+                    엄청 화려하고 멋있고, 또 강하기까지 합니다만, 그 뒤에서는 피나는 노력이 필요합니다.</p>
+                <a class="morebtn btn_14px" href="#"></a>
+            </div>
+            <div class="hoverswitch3">
+                <h3>HUNTER</h3>
+                <p class="p_16px">사냥꾼은 몬스터와 동물을 사냥하고, 그 부산물을 판매하는것으로 생활합니다.
+                    새벽의 고요한 숲속에서 몬스터를 사냥하는, 짐승과도 같은 전문 사냥꾼의 모습이 상상되나요?</p>
+                <a class="morebtn btn_14px" href="#"></a>
+            </div>
+            <div class="hoverswitch4">
+                <h3>EXPLORER</h3>
+                <p class="p_16px">탐험가는 미개척지와 미궁, 던전을 탐험하고, 지고의 유적과 전설을 찾아 여행합니다.
+                    수집한 골동품을 팔아 일확천금을 노리거나, 전설의 용기사가 만든 신화급 무구를 찾아 새로운 용기사가 될 수도 있겠죠.</p>
+                <a class="morebtn btn_14px" href="#"></a>
+            </div>
+            <div class="hoverswitch5">
+                <h3>VAGABOND</h3>
+                <p class="p_16px">방랑기사는 엄연히 망명높은 기사지만, 그 어디에도 소속되지 않고 가난한, 낭만 있는 투사입니다.
+                    강인한 체력과 불굴의 의지를 가진 정의의 기사님을 찾는 사람들을 위해 최선을 다합니다. </p>
+                <a class="morebtn btn_14px" href="#"></a>
+            </div>
+            <div class="hoverswitch6">
+                <h3>YOU</h3>
+                <p class="p_16px">걸어갈 길이 반드시 잘 닦여있을 필요는 없는 법입니다. 
+                    무엇이든 해보세요. 도시의 이야기를 찾아다니고, 여행을 다니다 보면 당신만의 새로운 이야기가 쓰여질것입니다. </p>
+                <a class="morebtn btn_14px" href="#"></a>
+            </div>
+        </div>
+    </section>
+    <section>
+
+    </section>
+    <footer>
+        <div class="footermenu"><!--flex, 좌우 끝 정렬로 벌리기-->
+            <ul class="navbar">
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">문의하기</a></li>
+                <li><a href="#">사용자문제신고센터</a></li>
+                <li><a href="#">이벤트, 저작권 규약</a></li>
+            </ul>
+            <ul class="sns">
+                <li class="icon"><a><i class="fa-brands fa-instagram"></i></a></li><!--인별-->
+                <li class="icon"><a><i class="fa-brands fa-facebook"></i></a></li><!--페북-->
+                <li class="icon"><a><i class="fa-brands fa-twitter"></i></a></li><!--트윗-->
+                <li class="icon"><a><i class="fa-brands fa-discord"></i></a></li><!--디코-->
+                <li class="icon"><a><i class="fa-brands fa-youtube"></i></a></li><!--유튭-->
+            </ul>
+        </div>
+        <div class="footerCaution">
+            <img src="" alt=""><!--겜 로고-->
+            <div class="footerimg">
+                <img src="" alt="R18"><!--18세경고-->
+                <img src="" alt="lang"><!--언어유해-->
+                <img src="" alt="violent"><!--폭력성-->
+            </div>
+        </div>
+        <div class="footerInfo">
+            <span class="footerInfo_nostring">TeamCyiva</span>
+            <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
+            <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
+            <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
+            <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
+            <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
+            <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
+            <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+        </div>
+        <div class="sponsored">
+            <img src="https://i.postimg.cc/jjTZK8Lk/Audodesk-Gameware.png"><!--Autodesk Gameware-->
+            <img src="https://i.postimg.cc/MH59r1Wr/UE-Logo-horizontal-unreal-engine-white.png"><!--UE5-->
+            <img src="https://i.postimg.cc/xCT5NcGv/wwise-logo-rgb-7e17bcc5.png"><!--Wwise sound engine-->
+        </div>
+        <p class="footerCopy">Copyright TeamCyiva 2023 All Rights Reserved.</p>
+    </footer>
+</body>
