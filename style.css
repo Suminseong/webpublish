@@ -1304,3 +1304,62 @@ form {
     margin-top: 90px;
 }
 
+/*일단 여기부터 무기칸 만들자*/
+
+.weapon_chart {
+    display: flex;
+    width: 75vw;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 500px;
+}
+
+.weapons{
+    background-color: var(--black700);
+    color: white;
+    padding: 100px 0;
+    min-height: 70vh;
+}
+
+.weapon_chart > div {
+    flex: 1;
+    transition: flex 0.3s ease;
+    overflow: hidden;
+    margin: 40px 0;
+}
+
+.visiblecontainer p{
+    margin-top: 10px;
+}
+
+.visiblecontainer h3{
+    margin-top: 40px;
+}
+
+.weapon_chart > div img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    object-position: left top;
+}
+
+.weapon_chart > div:hover {
+    flex: 6;
+}
+
+.weapon_chart > div:hover img {
+    transform: scale(1.5);
+}
+
+.weapon_chart > div:not(:hover) {
+    flex: 0.5; 
+}
+
+.visiblecontainer > div {
+    display: none;
+}
+
+.visiblecontainer > div.show {
+    display: block;
+}
