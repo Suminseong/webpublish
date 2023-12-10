@@ -3,84 +3,533 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=Noto+Sans&family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--폰트어썸 6.2-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=IBM+Plex+Serif:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--폰트어썸-->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
     <header><!--positio fixed 0,0,0-->
-        <div class="conpanyAct">
-            <a class="companyLogo"></a>
+        <div class="companyAct">
+            <a class="companyLogo"><img src="https://i.ibb.co/1vJy6Yr/clogo.png"></a>
             <ul class="companyNav">
                 <li><a href="#">Our Games</a></li>
                 <li><a href="#">News</a></li>
             </ul>
         </div>
         <div class="navbar"><!--투명도 0.8-->
-            <div class="navbar_gLogo">
-                <a class="gamelogo" href="index.html"></a>
+            <div class="left">
+                <div class="navbar_gLogo">
+                    <a class="gamelogo" href="index.html"></a>
+                </div>
+                <ul class="navbar_nav">
+                    <li><a class="navfont" href="newinfo.html">새소식</a></li>
+                    <li><a class="navfont" href="notification.html">공지사항</a></li>
+                    <li><a class="navfont" href="camp.html">모험가 캠프</a></li>
+                    <li><a class="navfont" href="guide.html">신참가이드</a></li>
+                    <li><a class="navfont" href="auction.html">길드거래소</a></li>
+                    <li><a class="navfont" href="cutomersevice.html">고객센터</a></li>
+                    <li><a class="navfont" href="#">자유게시판</a></li>
+                    <li><a class="navfont" href="download.html">다운로드</a></li>
+                </ul>
             </div>
-            <ul class="navbar_nav">
-                <li><a href="newinfo.html">새소식</a></li>
-                <li><a href="notification.html">공지사항</a></li>
-                <li><a href="camp.html">모험가 캠프</a></li>
-                <li><a href="guide.html">신참가이드</a></li>
-                <li><a href="auction.html">길드거래소</a></li>
-                <li><a href="cutomersevice.html">고객센터</a></li>
-                <li><a href="threads,html">자유게시판</a></li>
-                <li><a href="download.html">다운로드</a></li>
-            </ul>
             <div class="navbar_user">
-                <a class="start" href="#"></a><!--게임플레이-->
+                <a class="start" href="#"><p>게임플레이</p></a><!--게임플레이-->
                 <a class="user" href="#"></a><!--유저아이콘-->
             </div>
         </div>
     </header>
-    <div class="hero">
-
-
+    <div class="hero hero_guide">
+        <div class="margin_frame">
+            <p class="hero_big">Newbie<br>Gameguide</p>
+            <p class="hero_normal">신입! 이거부터 챙겨! 갑옷은 챙겼나? 안 예뻐서 안입어? 맙소사.</p>
+            <p>길드와 모험이 처음인 신참이라면 여기부터!</p>
+        </div>
     </div>
+
+    <section class="gears">
+        <h3>1.장비</h3>
+        <p class="p_16px">원래 덜 아프게 맞고, 더 아프게 때리는게 싸움의 정석이랍니다.</p>
+        <div class="margin_frame">
+            <div class="script_container"><!--relative, 자식은 hover에 의해 display 제어-->
+                <div class="guide guidehand"><!--장갑 설명-->
+                    <div class="textbox">
+                        <p class="p_18px">장갑/건틀릿</p>
+                        <p class="p_16px">크고작은 부상에 노출되기 쉬운 손을 보호할 수 있습니다. 무거운 무기를 들거나 손으로 하는 활동시 발생하는 피로와 부상 위험을 억제할 수 있어 필수로 착용합니다.</p>
+                    </div>
+                    <div class="guide_armor_box">
+                        <p class="p_18px">초기 추천 장비 수급처</p>
+                        <div class="img_frame">
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">A. 일반 상점</p>
+                            </div>
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">B. 도시 대장간</p>
+                            </div>
+                        </div>
+                        <p class="p_14px">초보부터 베테랑 모험가들 모두 가죽장갑을 필수로 권합니다. 매우 저렴하고, 뛰어난 부상 위험 감소효과, 긴 시간 검을 잡아도 물집 상태이상이 발생하지 않는 등 유용한 효과가 매우 많습니다. 금속으로 만들고 팔까지 보호받는 건틀릿도 존재하지만, 무게와 행동제한 때문에 특별한 상황 외에는 착용하지 않습니다.</p>
+                    </div>
+                </div>
+                <div class="guide guidearm"><!--팔보호구 설명-->
+                    <div class="textbox">
+                        <p class="p_18px">팔 보호구</p>
+                        <p class="p_16px">가죽, 나무를 덧대 묶는 아대부터 금속으로 팔 전체를 감싸는 플레이트 아머까지 다양한 종류가 있습니다. 자상 데미지 방어확률 증가와 물림데미지 무효 혜택이 있습니다.</p>
+                    </div>
+                    <div class="guide_armor_box">
+                        <p class="p_18px">초기 추천 장비 수급처</p>
+                        <div class="img_frame">
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">A. 길드 갑옷매장</p>
+                            </div>
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">B. 일반 상점</p>
+                            </div>
+                        </div>
+                        <p class="p_14px">건틀릿을 착용했다면 사용할 수 없는 부위입니다. 몬스터에 의해 발생하는 물림 데미지를 쉽게 방어할 수 있으며, 가성비도 높아 초보 모험가들에게는 가죽과 철판을 기워 만든 아대를 추천합니다. 주무기를 들지 않은 팔에만 장착해도 충분합니다. 팔을 모두 감싸는 뱀브레이스, 플레이트 아머는 그 무게와 행동제한, 가격으로 인해 평소에는 잘 쓰지 않습니다. </p>
+                    </div>
+                </div>
+                <div class="guide guideshoulder"><!--견갑 설명-->
+                    <div class="textbox">
+                        <p class="p_18px">견갑</p>
+                        <p class="p_16px">충돌 데미지 경감, 돌진 데미지 증가 혜택이 있습니다. 무엇보다도, 매우 예쁩니다. 우선순위는 다소 낮습니다만, 팔 부위에 중갑옷 착용시에는 필수로 착용해야합니다. </p>
+                    </div>
+                    <div class="guide_armor_box">
+                        <p class="p_18px">초기 추천 장비 수급처</p>
+                        <div class="img_frame">
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">A. 길드 가죽상점</p>
+                            </div>
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">B. 제작 스킬[무두질]</p>
+                            </div>
+                        </div>
+                        <p class="p_14px">중갑은 초기에 구하기 힘든 고급재료인 강철과 세공석, 높은 재련비용을 요구하기 때문에 권장되지 않습니다.(파산할 경우 게임 진행이 매우 어려워짐) 초기에는 목갑 또는 가죽갑옷을 구매해 입는것이 좋습니다. 길드에서 판매중인 ‘초심자 세트’, ‘길드 추천 경갑옷 세트’에 포함되지 않은 파츠이기 때문에, 길드 내 가죽상점에서 구매하는게 좋습니다.</p>
+                    </div>
+                </div>
+                <div class="guide guidehead"><!--투구 설명-->
+                    <div class="textbox">
+                        <p class="p_18px">투구</p>
+                        <p class="p_16px">치명상을 입기 쉬운 머리와 목을 보호합니다. 바이저와 목 보호대까지 착용할 수도 있지만, 시야범위와 목 움직임에 큰 저항을 줄 수 있어 보통의 경우에는 사용하지 않습니다.</p>
+                    </div>
+                    <div class="guide_armor_box">
+                        <p class="p_18px">초기 추천 장비 수급처</p>
+                        <div class="img_frame">
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">A. 길드 갑옷매장</p>
+                            </div>
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">B. 도시 대장간</p>
+                            </div>
+                        </div>
+                        <p class="p_14px">두부만 방어해주는 판금헬멧은 그 무게가 가볍고, 시야를 제한하지 않으면서도 저렴한 가격으로 판매되어 검, 둔기를 상대하는 용병들이 가장 많이 착용합니다. 잦은 이동과 몬스터와의 전투가 일반적인 모험, 탐험 관련 직군에게는 필수는 아닙니다. 중갑병, 워해머 파이터들은 목까지 완전히 보호받는 방식을 선호하기도 합니다.</p>
+                    </div>
+                </div>
+                <div class="guide guidetorso"><!--흉갑 설명-->
+                    <div class="textbox">
+                        <p class="p_18px">흉갑</p>
+                        <p class="p_16px">상반신의 가장 넓은 부분을 방어하는 가슴 부분의 방어구입니다. 무게가 가장 무겁지만, 가장 필요성이 높아 매우 강력하게 권장하는 방어구입니다. 솜, 천, 가죽, 강철 등 다양한 재질이 있습니다.</p>
+                    </div>
+                    <div class="guide_armor_box">
+                        <p class="p_18px">초기 추천 장비 수급처</p>
+                        <div class="img_frame">
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">A. 길드 갑옷매장</p>
+                            </div>
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">B. 도시 대장간</p>
+                            </div>
+                        </div>
+                        <p class="p_14px">천 재질은 가장 가볍고 저렴하나, 베기 몇번이면 내구도를 상실해 탐험가를 제외하고는 추천하지 않습니다. 초보 모험가들에게는 가격과 성능이 조화를 이루는 '경화 가죽 흉갑'을 권합니다. 포럼에서는 교복이라 지칭할 정도로 유명하고 대중적입니다. 솜은 창에 대한 방어가 뛰어나고, 판금, 강철은 무겁고 비싸 중갑병 외에는 잘 입지 않습니다.</p>
+                    </div>
+                </div>
+                <div class="guide guidetasset"><!--배갑 설명-->
+                    <div class="textbox">
+                        <p class="p_18px">배갑</p>
+                        <p class="p_16px">복부에 두르거나 흉갑에 연결하여 배를 방어하는 방어구입니다. 실제로는 방어보다 가방, 검집을 고정할 수 있는 유틸성을 높이 사 장비하는 경우가 많습니다. 가죽 벨트방식이 가장 인기 있습니다.</p>
+                    </div>
+                    <div class="guide_armor_box">
+                        <p class="p_18px">초기 추천 장비 수급처</p>
+                        <div class="img_frame">
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">A. 길드 갑옷매장</p>
+                            </div>
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">B. 도시 대장간</p>
+                            </div>
+                        </div>
+                        <p class="p_14px">복부는 흉갑 하단의 플라카트로 보호되기 때문에 배갑이 필수는 아닙니다. 따라서 일반 모험가들에게는 유틸성을 고려해 일정한 간격으로 구멍을 내 무언가 고정하기 좋은 가죽벨트식 배갑을 추천합니다. 방어가 필요하다면 배까지 가려주는 흉갑을 사는것도 좋습니다. 하지만, 중갑병이나 검을 상대하는 용병들은 종종 입기도 합니다.</p>
+                    </div>
+                </div>
+                <div class="guide guideleg"><!--다리 설명-->
+                    <div class="textbox">
+                        <p class="p_18px">퀴스와 그리브</p>
+                        <p class="p_16px">허벅지부터 무릎관절, 정강이까지를 방어할 수 있습니다. 가죽, 철판을 기워 만든 아대형식과 판금갑옷 방식이 있습니다. 보통은 다리에 칼 맞을 일이 없어 용병들은 잘 착용하지 않습니다.</p>
+                    </div>
+                    <div class="guide_armor_box">
+                        <p class="p_18px">초기 추천 장비 수급처</p>
+                        <div class="img_frame">
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">A. 길드 갑옷매장</p>
+                            </div>
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">B. 도시 대장간</p>
+                            </div>
+                        </div>
+                        <p class="p_14px">이동과 움직임의 기본이 되는 하반신을 보호하기 때문에 그 중요도가 높지만, 생각보다 다칠일이 적어 아대 정도만 착용하는게 효율적입니다. 하지만, 늪지대나 숲을 공략할 때, 소형 몬스터와 독초, 함정에 대비하기 위해 어느정도 수준을 요구하는 판금갑옷이 필요할 수 있습니다. 개중에는 신발부터 골반가지 보호하는 가죽 바지도 있습니다.</p>
+                    </div>
+                </div>
+                <div class="guide guideshoes"><!--신발 설명-->
+                    <div class="textbox">
+                        <p class="p_18px">신발</p>
+                        <p class="p_16px">보통은 발목부터 발끝까지 막아주는 방식이 흔하지만, 가끔 정강이, 무릎까지 올라오는 경우도 있습니다. 재질 또한 천, 가죽, 금속 등 다양합니다. 필수적인 보호구입니다.</p>
+                    </div>
+                    <div class="guide_armor_box">
+                        <p class="p_18px">초기 추천 장비 수급처</p>
+                        <div class="img_frame">
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">A. 길드 갑옷매장</p>
+                            </div>
+                            <div class="place">
+                                <img src="">
+                                <p class="p_18px">B. 도시 대장간</p>
+                            </div>
+                        </div>
+                        <p class="p_14px">맨발은 크고작은 부상 위험이 존재하기 때문에 반드시 신발을 착용해야합니다. 가격과 관리 측면에서 천과 가죽 재질이나 나무 재질이 가장 기본적입니다. 중갑병이나 일부 기사 직군은 금속재질로 발등과 발코를 보강한 형태의 보호구를 장비하기도 하지만, 가격이 비싸고 행동 제한이 매우 커 특별한 경우에만 사용합니다.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="armor_gears"><!--배경에 갑옷 그림, 아래 클래스별로 위치 지정해줄것-->
+                <div class="gears_hover gears_hand1"></div><!--장갑-->
+                <div class="gears_hover gears_hand2"></div><!--장갑-->
+                <div class="gears_hover gears_arm1"></div><!--팔-->
+                <div class="gears_hover gears_arm2"></div><!--팔-->
+                <div class="gears_hover gears_shoulder1"></div><!--견갑-->
+                <div class="gears_hover gears_shoulder2"></div><!--견갑-->
+                <div class="gears_hover gears_head"></div><!--투구-->
+                <div class="gears_hover gears_torso"></div><!--흉갑-->
+                <div class="gears_hover gears_tasset"></div><!--배갑-->
+                <div class="gears_hover gears_leg1"></div><!--다리-->
+                <div class="gears_hover gears_leg2"></div><!--다리-->
+                <div class="gears_hover gears_shoe1"></div><!--신발-->
+                <div class="gears_hover gears_shoe2"></div><!--신발-->
+                <p class="p_14px">마우스를 올려보세요!</p>
+            </div>
+        </div>
+        
+    </section>
+    <section>
+        <h3>2.무기</h3>
+        <p class="p_16px">몬스터, 악당과의 훌륭한 대화수단입니다</p>
+        <div class="weapon_chart"><!--flex 각 4 1 1 1 1 1... 줬다가 hover하는거 4으로 바뀌게, 밑의 hoverswitch display none 조정-->
+            <div class="weaponbox1 weapon_image"><img src=""></div><!--한손검-->
+            <div class="weaponbox2 weapon_image"><img src=""></div><!--양손검-->
+            <div class="weaponbox3 weapon_image"><img src=""></div><!--단검-->
+            <div class="weaponbox4 weapon_image"><img src=""></div><!--창-->
+            <div class="weaponbox5 weapon_image"><img src=""></div><!--워해머-->
+            <div class="weaponbox6 weapon_image"><img src=""></div><!--사이드-->
+            <div class="weaponbox7 weapon_image"><img src=""></div><!--활-->
+            <div class="weaponbox8 weapon_image"><img src=""></div><!--캐논-->
+            <div class="weaponbox9 weapon_image"><img src=""></div><!--스태프-->
+        </div>
+        <div class="visiblecontainer"><!--1~9까지 위 박스 숫자와 상통-->
+            <div class="container_weapon1">
+                <h3>한손검</h3>
+                <p class="p_16px">
+                    가볍고, 다양하게 쓰기 좋습니다. 달리 말하자면 그 어디에도 특화되지 않은 약함을 가졌습니다. 가장 처음 사용하게 될 무기입니다.<br>
+                    저렴하고, 구하기도 쉽고, 관리도 간편합니다.<br>
+                    <br>
+                    공격력 : C<br>
+                    베기 : B<br>
+                    속도 : C<br>
+                    유지관리 : A<br>
+                    요구조건: 스킬 ‘엉망진창 무기술’, 힘 <span>6</span> 이상
+                </p>
+            </div>
+            <div class="container_weapon2">
+                <h3>양손검</h3>
+                <p class="p_16px">
+                    무겁고, 비싸고, 휴대가 곤란하지만, 압도적인 퍼포먼스를 선보일 수 있는 육중한 대검입니다. 큰 것은 당신의 키보다 큰 경우도 있습니다.<br>
+                    무기 수급과 관리는 제한된 곳에서만 가능할 것 같습니다.<br>
+                    <br>
+                    공격력 : A<br>
+                    베기 : B<br>
+                    속도 : D<br>
+                    유지관리 : C<br>
+                    요구조건: 스킬 ‘기본검술’, 힘 <span>9</span> 이상
+                </p>
+            </div>
+            <div class="container_weapon3">
+                <h3>단검</h3>
+                <p class="p_16px">
+                    한 번에 여러가지를 휴대할 수 있고, 손가락 두 마디 만한 바늘부터 두 뼘 남짓한 길이의 대거까지 다양하게 준비된 폭 넓은 무기입니다.<br>
+                    날이 매우 예리하고, 투척과 침투 등 다능하지만, 내구도가 매우 약합니다. <br>
+                    <br>
+                    공격력 : D<br>
+                    베기 : A<br>
+                    속도 : A<br>
+                    유지관리 : D<br>
+                    요구조건: 스킬 ‘단검술’, 힘 <span>4</span>, 민첩 <span>4</span> 이상
+                </p>
+            </div>
+            <div class="container_weapon4">
+                <h3>창</h3>
+                <p class="p_16px">
+                    3미터 이상의 긴 창대가 갖는 사거리와 저지력은 기병을 상대할 때 매우 유옹합니다. 몰론, 2미터 이하의 단창도 있습니다!<br>
+                    방패와 함께 장비하여 돌파에 특화하거나, 기동성을 살려 돌진에 쓸 수 있습니다.<br>
+                    <br>
+                    공격력 : B<br>
+                    찌르기 : A<br>
+                    속도 : C<br>
+                    유지관리 : B<br>
+                    요구조건: 스킬 ‘기본창술’, 힘 <span>7</span> 이상
+                </p>
+            </div>
+            <div class="container_weapon5">
+                <h3>워해머</h3>
+                <p class="p_16px">
+                    전체가 쇠로 만들어진 머리만한 망치는 이미 그 자체로 완벽한 흉기입니다. 기술도 필요없이 그저 휘두르기만 하면 됩니다.<br>
+                    내구도가 일품이지만, 힘이 강하지 않다면 절대 시도하지 마세요<br>
+                    <br>
+                    공격력 : A<br>
+                    충격력 : S<br>
+                    속도 : E<br>
+                    유지관리 : A<br>
+                    요구조건: 힘 <span>13</span> 이상
+                </p>
+            </div>
+            <div class="container_weapon6">
+                <h3>사이드</h3>
+                <p class="p_16px">
+                    거대한 낫을 휘둘러 몬스터와 적들의 영혼을 수확할 수 있습니다. 무엇보다도, 사이드를 휘두르는 모습이 아주 멋있습니다.<br>
+                    낫이 매우 거대하고, 제대로 사용하려면 매우 많은 노력이 필요합니다.<br>
+                    <br>
+                    공격력 : B<br>
+                    베기 : S<br>
+                    속도 : A<br>
+                    유지관리 : C<br>
+                    요구조건: 스킬 ‘정교한 무기술’, 스킬 '기본창술', 힘 <span>8</span>, 민첩 <span>5</span> 이상
+                </p>
+            </div>
+            <div class="container_weapon7">
+                <h3>활</h3>
+                <p class="p_16px">
+                    원거리에서 은폐하여 적을 암살하는 최고의 수단입니다. 사용 화살에 따라 다양한 유틸 기능을 제공합니다.<br>
+                    제법 비싸고, 관리를 위한 각고의 노력이 필요합니다.<br>
+                    <br>
+                    공격력 : D<br>
+                    사거리 : A<br>
+                    속도 : B<br>
+                    유지관리 : D<br>
+                    요구조건: 스킬 ‘궁술’, 특성 '집중력', 힘 <span>7</span>, 정신력 <span>3</span> 이상
+                </p>
+            </div>
+            <div class="container_weapon8">
+                <h3>핸드캐논</h3>
+                <p class="p_16px">
+                    화약, 그리고 불씨만 있다면 준비 만전. 콩알만한 납탄부터 주먹 두개보다 큰 쇠구슬까지 발사 가능한 핸드캐논입니다.<br>
+                    화약이 굉장히 고가이며, 특수한 시설의 전문가들만이 유지보수가 가능합니다.<br>
+                    <br>
+                    공격력 : A<br>
+                    사거리 : A<br>
+                    속도 : D<br>
+                    유지관리 : F<br>
+                    요구조건: 전문지식 ‘화기’, 전문지식 '포병의 기본', 힘 <span>10</span> 이상
+                </p>
+            </div>
+            <div class="container_weapon9">
+                <h3>스태프</h3>
+                <p class="p_16px">
+                    세계의 지식, 그 편린을 엿본 자에게 주어지는 구도자의 상징입니다. 마법 투사를 보조하지만, 거의 필수입니다. 둔기로 쓰는건...추천드리지 않습니다.<br>
+                    연금술을 익힌 마법사가 긴 시간에 걸쳐 만들어지고, 타인의 스태프는 사용할 수 없습니다.<br>
+                    <br>
+                    마력보조 : S<br>
+                    충격력 : E<br>
+                    속도 : B<br>
+                    유지관리 : S<br>
+                    요구조건: 스킬 ‘초급마법’, 스킬 '마나 공명', 전문지식 '연금 심화I', 전문지식 '마나학' 요구
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h3>3. 수입</h3>
+        <p class="p_16px">혹시 돈으로 안되는게 있다면, 돈이 부족한건 아닌지 고민해보세요.</p>
+        <div class="alert_container">
+            <div class="alert"><!--bg에 이미지-->
+                <div class="alert_textbox"><!--하단에 붙이기-->
+                    <p class="p_14px"><span style="font-weight: bold;">길드의뢰 달성과 성과급</span></p>
+                    <p class="p_12px">의뢰달성 등급에 따라 의뢰 달성금과 추가 성과급을 같이 얻을 수 있다고 하는데, 조건이 어떻게 되나요?</p>
+                </div>
+            </div>
+            <div class="alert"><!--bg에 이미지-->
+                <div class="alert_textbox"><!--하단에 붙이기-->
+                    <p class="p_14px"><span style="font-weight: bold;">NPC, 유저 의뢰</span></p>
+                    <p class="p_12px">사실, 길드 말고도 의뢰를 제공하는 사람들은 존재합니다. 상인들의 호위, 채집 의뢰부터 유저간의 아이템 요청, 파티 의뢰까지 말이죠.</p>
+                </div>
+            </div>
+            <div class="alert"><!--bg에 이미지-->
+                <div class="alert_textbox"><!--하단에 붙이기-->
+                    <p class="p_14px"><span style="font-weight: bold;">생산활동과 거래</span></p>
+                    <p class="p_12px">당신이 사용하던 무기, 포션, 소모품 또한 누군가 생산하고 판매하는 물품입니다. 그 판매를 당신도 할 수 있냐고요? 몰론이죠.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>4. 플레이 로드맵</h3>
+        <p class="p_16px">레벨도, 규칙도 없지만, 그래서 더 즐거운 법입니다.</p>
+        <img src=""><!--로드맵 이미지-->
+    </section>
 
     <footer>
         <div class="footermenu"><!--flex, 좌우 끝 정렬로 벌리기-->
             <ul class="navbar">
                 <li><a href="#">이용약관</a></li>
+                <li class="line"></li>
                 <li><a href="#">개인정보처리방침</a></li>
+                <li class="line"></li>
                 <li><a href="#">문의하기</a></li>
+                <li class="line"></li>
                 <li><a href="#">사용자문제신고센터</a></li>
+                <li class="line"></li>
                 <li><a href="#">이벤트, 저작권 규약</a></li>
             </ul>
             <ul class="sns">
-                <li class="icon"><a></a></li><!--인별-->
-                <li class="icon"><a></a></li><!--페북-->
-                <li class="icon"><a></a></li><!--트윗-->
-                <li class="icon"><a></a></li><!--디코-->
-                <li class="icon"><a></a></li><!--유튭-->
+                <li class="icon"><a><i class="fa-brands fa-instagram"></i></a></li><!--인별-->
+                <li class="icon"><a><i class="fa-brands fa-facebook"></i></a></li><!--페북-->
+                <li class="icon"><a><i class="fa-brands fa-twitter"></i></a></li><!--트윗-->
+                <li class="icon"><a><i class="fa-brands fa-discord"></i></a></li><!--디코-->
+                <li class="icon"><a><i class="fa-brands fa-youtube"></i></a></li><!--유튭-->
             </ul>
         </div>
         <div class="footerCaution">
-            <img src="" alt=""><!--겜 로고-->
+            <img src="https://i.ibb.co/wQMCW1g/glogo-white.png" alt="."><!--겜 로고-->
             <div class="footerimg">
-                <img src="" alt="R18"><!--18세경고-->
-                <img src="" alt="lang"><!--언어유해-->
-                <img src="" alt="violent"><!--폭력성-->
+                <img src="https://i.postimg.cc/VNmMYN3h/caution-copy.png" alt="R18"><!--18세경고-->
+                <img src="https://i.postimg.cc/9QGZ59NT/language-1.png" alt="lang"><!--언어유해-->
+                <img src="https://i.postimg.cc/vZRfNhXb/violence-1.png" alt="violent"><!--폭력성-->
             </div>
         </div>
         <div class="footerInfo">
-            <span class="footerInfo_nostring">TeamCyiva</span>
-            <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
-            <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
-            <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
-            <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
-            <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            <div class="rolltext">
+                <span class="footerInfo_string">TeamCyiva</span>
+                <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
+                <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
+                <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
+                <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
+                <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            </div>
         </div>
         <div class="sponsored">
-            <img src=""><!--Autodesk Gameware-->
-            <img src=""><!--UE5 Lumen Technology-->
-            <img src=""><!--Wwise sound engine-->
+            <div class="container"><img src="https://i.postimg.cc/bw29GCyt/partner1.png"><!--Autodesk Gameware--></div>
+            <div class="container"><img src="https://i.postimg.cc/BQbg3ZRN/partner2.png"><!--UE5--></div>
+            <div class="container"><img src="https://i.postimg.cc/s2d95Yx0/partner3.png"><!--Wwise sound engine--></div>
         </div>
         <p class="footerCopy">Copyright TeamCyiva 2023 All Rights Reserved.</p>
     </footer>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    // 이전에 hover된 객체를 저장하기 위한 변수
+    var previousHoveredGuide = null;
+
+    // 함수를 정의하여 재사용 가능하도록 함
+    function handleHover(gearElement, guideElement) {
+        gearElement.addEventListener('mouseover', function () {
+            if (previousHoveredGuide) {
+                // 이전에 hover된 객체가 있으면 display를 none으로 변경
+                previousHoveredGuide.style.display = 'none';
+            }
+
+            if (guideElement) {
+                guideElement.style.display = 'block';
+                // 현재 hover된 객체를 저장
+                previousHoveredGuide = guideElement;
+            }
+        });
+
+        gearElement.addEventListener('mouseout', function () {
+            // 아무 작업도 하지 않음
+        });
+    }
+
+    // 재사용 가능한 함수를 호출하여 이벤트 핸들링
+    handleHover(
+        document.querySelector('.gears_hover.gears_hand1'),
+        document.querySelector('.guide.guidehand')
+    );
+
+    handleHover(
+        document.querySelector('.gears_hover.gears_hand2'),
+        document.querySelector('.guide.guidehand')
+    );
+
+    handleHover(
+        document.querySelector('.gears_hover.gears_arm1'),
+        document.querySelector('.guide.guidearm')
+    );
+
+    handleHover(
+        document.querySelector('.gears_hover.gears_arm2'),
+        document.querySelector('.guide.guidearm')
+    );
+
+    handleHover(
+        document.querySelector('.gears_hover.gears_shoulder2'),
+        document.querySelector('.guide.guideshoulder')
+    );
+    handleHover(
+        document.querySelector('.gears_hover.gears_shoulder1'),
+        document.querySelector('.guide.guideshoulder')
+    );
+
+    handleHover(
+        document.querySelector('.gears_hover.gears_leg2'),
+        document.querySelector('.guide.guideleg')
+    );
+    handleHover(
+        document.querySelector('.gears_hover.gears_leg1'),
+        document.querySelector('.guide.guideleg')
+    );
+
+    handleHover(
+        document.querySelector('.gears_hover.gears_shoe2'),
+        document.querySelector('.guide.guideshoes')
+    );
+    handleHover(
+        document.querySelector('.gears_hover.gears_shoe1'),
+        document.querySelector('.guide.guideshoes')
+    );
+    handleHover(
+        document.querySelector('.gears_hover.gears_head'),
+        document.querySelector('.guide.guidehead')
+    );
+    handleHover(
+        document.querySelector('.gears_hover.gears_tasset'),
+        document.querySelector('.guide.guidetasset')
+    );
+    handleHover(
+        document.querySelector('.gears_hover.gears_torso'),
+        document.querySelector('.guide.guidetorso')
+    );
+});
+</script>
