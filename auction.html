@@ -3,83 +3,191 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=Noto+Sans&family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--폰트어썸 6.2-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=IBM+Plex+Serif:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--폰트어썸-->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
     <header><!--positio fixed 0,0,0-->
-        <div class="conpanyAct">
-            <a class="companyLogo"></a>
+        <div class="companyAct">
+            <a class="companyLogo"><img src="https://i.ibb.co/1vJy6Yr/clogo.png"></a>
             <ul class="companyNav">
                 <li><a href="#">Our Games</a></li>
                 <li><a href="#">News</a></li>
             </ul>
         </div>
         <div class="navbar"><!--투명도 0.8-->
-            <div class="navbar_gLogo">
-                <a class="gamelogo" href="index.html"></a>
+            <div class="left">
+                <div class="navbar_gLogo">
+                    <a class="gamelogo" href="index.html"></a>
+                </div>
+                <ul class="navbar_nav">
+                    <li><a class="navfont" href="newinfo.html">새소식</a></li>
+                    <li><a class="navfont" href="notification.html">공지사항</a></li>
+                    <li><a class="navfont" href="camp.html">모험가 캠프</a></li>
+                    <li><a class="navfont" href="guide.html">신참가이드</a></li>
+                    <li><a class="navfont" href="auction.html">길드거래소</a></li>
+                    <li><a class="navfont" href="cutomersevice.html">고객센터</a></li>
+                    <li><a class="navfont" href="#">자유게시판</a></li>
+                    <li><a class="navfont" href="download.html">다운로드</a></li>
+                </ul>
             </div>
-            <ul class="navbar_nav">
-                <li><a href="newinfo.html">새소식</a></li>
-                <li><a href="notification.html">공지사항</a></li>
-                <li><a href="camp.html">모험가 캠프</a></li>
-                <li><a href="guide.html">신참가이드</a></li>
-                <li><a href="auction.html">길드거래소</a></li>
-                <li><a href="cutomersevice.html">고객센터</a></li>
-                <li><a href="threads,html">자유게시판</a></li>
-                <li><a href="download.html">다운로드</a></li>
-            </ul>
             <div class="navbar_user">
-                <a class="start" href="#"></a><!--게임플레이-->
+                <a class="start" href="#"><p>게임플레이</p></a><!--게임플레이-->
                 <a class="user" href="#"></a><!--유저아이콘-->
             </div>
         </div>
     </header>
-    <div class="hero">
-
-
+    <div class="hero hero_auction">
+        <div class="margin_frame">
+            <p class="hero_big">Guild<br>Auction</p>
+            <p class="hero_normal">길드에서 직접 연결해주고, 보증하는 상품 거래 서비스</p>
+            <p>흔해빠진 물건은 취급하지 않습니다.</p>
+        </div>
     </div>
+    <div class="auction_title"><!--배경은? 블랙-->
+        <h3>Private Auction</h3><!--하단 경계선 1px white-->
+    </div>
+    <section class="legend">
+        <p class="auction_large">Legend Collection</p>
+        <p class="p_14px">Top 4 Estimate Price</p>
+        <div class="auction_container"><!--flex용 울타리-->
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/90cdhMdX/Frame-101.png">
+                <h3>1.</h3>
+                <p class="auction_small">Desert Dragon’s Heart</p>
+                <p class="p_16px">By 홀홀홀아버지</p>
+                <p class="p_18px"><span>Estimate : 1,900,000,000 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/hjLL6x73/Frame-101-1.png">
+                <h3>2.</h3>
+                <p class="auction_small">Book of Arpeggiare Breath</p>
+                <p class="p_16px">By Harfe Diterheim(NPC)</p>
+                <p class="p_18px"><span>Estimate : 1,590,000,000 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/prkDXHCf/Frame-101-2.png">
+                <h3>3.</h3>
+                <p class="auction_small">First Codex</p>
+                <p class="p_16px">By 주님한놈더갑니다</p>
+                <p class="p_18px"><span>Estimate : 1,424,900,000 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/MT209tXQ/Frame-101-3.png">
+                <h3>4.</h3>
+                <p class="auction_small">제 3왕자와의 식사권</p>
+                <p class="p_16px">By 맛없는참깨빙수</p>
+                <p class="p_18px"><span>Estimate : 1,100,000,000 Gold</span></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="epicauction">
+        <p class="auction_medium">Epic Collection</p>
+        <p class="p_14px">Upper Than 100,000,000 Gold</p>
+        <div class="auction_container"><!--flex용 울타리-->
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/gjMZbKc4/Frame-101.png">
+                <p class="auction_small">용살자의 대검 +11</p>
+                <p class="p_16px">By 누르렁</p>
+                <p class="p_18px"><span>Estimate : 733,333,333 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/0Q0ScsLT/Frame-101-1.png">
+                <p class="auction_small">Alice Sarah’s secret note</p>
+                <p class="p_16px">By 축성차단물</p>
+                <p class="p_18px"><span>Estimate : 719,000,000 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/28KZHTKS/Frame-101-2.png">
+                <p class="auction_small">신마대전의 성서 제 2권</p>
+                <p class="p_16px">By 빙수테이크아웃뜨겁게</p>
+                <p class="p_18px"><span>Estimate : 649,000,000 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/52QFDvhq/Frame-101-3.png">
+                <p class="auction_small">Virmilion’s War Hammer +13</p>
+                <p class="p_16px">By 다이어트호소인</p>
+                <p class="p_18px"><span>Estimate : 611,123,456 Gold</span></p>
+            </div>
+        </div>
+        <a class="morebtn btn_14px">더보기</a>
+    </section>
+
+    <section class="uncommon">
+        <h3>Uncommon Collection</h3>
+        <p class="p_14px">Upper Than 10,000,000 Gold</p>
+        <div class="auction_container"><!--flex용 울타리-->
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/vT8VKKyc/Frame-101-4.png">
+                <p class="auction_small">뱀파이어의 진혈 10병</p>
+                <p class="p_18px"><span>Estimate : 97,000,000 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/RCGftv1f/Frame-101-5.png">
+                <p class="auction_small">아공간 주머니(75칸)</p>
+                <p class="p_18px"><span>Estimate : 90,000,000 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/s2FZzxyF/Frame-101-6.png">
+                <p class="auction_small">집념의 레이피어 +20</p>
+                <p class="p_18px"><span>Estimate : 87,000,000 Gold</span></p>
+            </div>
+            <div class="auction_card">
+                <img src="https://i.postimg.cc/tCT6t8Dc/Frame-101-7.png">
+                <p class="auction_small">[급처]세계수의 열매 1개</p>
+                <p class="p_18px"><span>Estimate : 81,111,111 Gold</span></p>
+            </div>
+        </div>
+        <a class="morebtn btn_14px">더보기</a>
+    </section><!--하단 margin 주세용-->
 
     <footer>
         <div class="footermenu"><!--flex, 좌우 끝 정렬로 벌리기-->
             <ul class="navbar">
                 <li><a href="#">이용약관</a></li>
+                <li class="line"></li>
                 <li><a href="#">개인정보처리방침</a></li>
+                <li class="line"></li>
                 <li><a href="#">문의하기</a></li>
+                <li class="line"></li>
                 <li><a href="#">사용자문제신고센터</a></li>
+                <li class="line"></li>
                 <li><a href="#">이벤트, 저작권 규약</a></li>
             </ul>
             <ul class="sns">
-                <li class="icon"><a></a></li><!--인별-->
-                <li class="icon"><a></a></li><!--페북-->
-                <li class="icon"><a></a></li><!--트윗-->
-                <li class="icon"><a></a></li><!--디코-->
-                <li class="icon"><a></a></li><!--유튭-->
+                <li class="icon"><a><i class="fa-brands fa-instagram"></i></a></li><!--인별-->
+                <li class="icon"><a><i class="fa-brands fa-facebook"></i></a></li><!--페북-->
+                <li class="icon"><a><i class="fa-brands fa-twitter"></i></a></li><!--트윗-->
+                <li class="icon"><a><i class="fa-brands fa-discord"></i></a></li><!--디코-->
+                <li class="icon"><a><i class="fa-brands fa-youtube"></i></a></li><!--유튭-->
             </ul>
         </div>
         <div class="footerCaution">
-            <img src="" alt=""><!--겜 로고-->
+            <img src="https://i.ibb.co/wQMCW1g/glogo-white.png" alt="."><!--겜 로고-->
             <div class="footerimg">
-                <img src="" alt="R18"><!--18세경고-->
-                <img src="" alt="lang"><!--언어유해-->
-                <img src="" alt="violent"><!--폭력성-->
+                <img src="https://i.postimg.cc/VNmMYN3h/caution-copy.png" alt="R18"><!--18세경고-->
+                <img src="https://i.postimg.cc/9QGZ59NT/language-1.png" alt="lang"><!--언어유해-->
+                <img src="https://i.postimg.cc/vZRfNhXb/violence-1.png" alt="violent"><!--폭력성-->
             </div>
         </div>
         <div class="footerInfo">
-            <span class="footerInfo_nostring">TeamCyiva</span>
-            <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
-            <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
-            <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
-            <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
-            <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            <div class="rolltext">
+                <span class="footerInfo_string">TeamCyiva</span>
+                <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
+                <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
+                <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
+                <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
+                <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            </div>
         </div>
         <div class="sponsored">
-            <img src=""><!--Autodesk Gameware-->
-            <img src=""><!--UE5 Lumen Technology-->
-            <img src=""><!--Wwise sound engine-->
+            <div class="container"><img src="https://i.postimg.cc/bw29GCyt/partner1.png"><!--Autodesk Gameware--></div>
+            <div class="container"><img src="https://i.postimg.cc/BQbg3ZRN/partner2.png"><!--UE5--></div>
+            <div class="container"><img src="https://i.postimg.cc/s2d95Yx0/partner3.png"><!--Wwise sound engine--></div>
         </div>
         <p class="footerCopy">Copyright TeamCyiva 2023 All Rights Reserved.</p>
     </footer>
