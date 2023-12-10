@@ -3,90 +3,97 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=Noto+Sans&family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--폰트어썸 6.2-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=IBM+Plex+Serif:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--폰트어썸-->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
     <header><!--positio fixed 0,0,0-->
-        <div class="conpanyAct">
-            <a class="companyLogo"></a>
+        <div class="companyAct">
+            <a class="companyLogo"><img src="https://i.ibb.co/1vJy6Yr/clogo.png"></a>
             <ul class="companyNav">
                 <li><a href="#">Our Games</a></li>
                 <li><a href="#">News</a></li>
             </ul>
         </div>
         <div class="navbar"><!--투명도 0.8-->
-            <div class="navbar_gLogo">
-                <a class="gamelogo" href="index.html"></a>
+            <div class="left">
+                <div class="navbar_gLogo">
+                    <a class="gamelogo" href="index.html"></a>
+                </div>
+                <ul class="navbar_nav">
+                    <li><a class="navfont" href="newinfo.html">새소식</a></li>
+                    <li><a class="navfont" href="notification.html">공지사항</a></li>
+                    <li><a class="navfont" href="camp.html">모험가 캠프</a></li>
+                    <li><a class="navfont" href="guide.html">신참가이드</a></li>
+                    <li><a class="navfont" href="auction.html">길드거래소</a></li>
+                    <li><a class="navfont" href="cutomersevice.html">고객센터</a></li>
+                    <li><a class="navfont" href="#">자유게시판</a></li>
+                    <li><a class="navfont" href="download.html">다운로드</a></li>
+                </ul>
             </div>
-            <ul class="navbar_nav">
-                <li><a href="newinfo.html">새소식</a></li>
-                <li><a href="notification.html">공지사항</a></li>
-                <li><a href="camp.html">모험가 캠프</a></li>
-                <li><a href="guide.html">신참가이드</a></li>
-                <li><a href="auction.html">길드거래소</a></li>
-                <li><a href="cutomersevice.html">고객센터</a></li>
-                <li><a href="threads,html">자유게시판</a></li>
-                <li><a href="download.html">다운로드</a></li>
-            </ul>
             <div class="navbar_user">
-                <a class="start" href="#"></a><!--게임플레이-->
+                <a class="start" href="#"><p>게임플레이</p></a><!--게임플레이-->
                 <a class="user" href="#"></a><!--유저아이콘-->
             </div>
         </div>
     </header>
-    <div class="hero">
-        <p class="hero_big">Client <br>Download</p>
-        <c class="hero_normal">게임플레이를 위해 런처 Client 설치가 필요합니다. 아래 버튼을 눌러 설치를 진행해주세요.</c>
-        <p class="p_16px">필요 하드디스크 여유공간 및 사양 : 하단 세부 사양 참고</p>
-        <div class="download_container">
-            <a class="download_btn">
-                <div class="download_img"></div>
-                <div class="texts">
-                    <h5>Windows</h5>
-                    <p class="btn_14px">Windows 7 64bit~</p>
-                </div>
-            </a>
-            <a class="download_btn">
-                <div class="download_img"></div>
-                <div class="texts">
-                    <h5>Mac os</h5>
-                    <p class="btn_14px">Mac OS Ventura~</p>
-                </div>
-            </a>
-            <a class="download_btn">
-                <div class="link_img"></div>
-                <div class="texts">
-                    <h5>Linux</h5>
-                    <p class="btn_14px">apt, yml, and more...</p>
-                </div>
-            </a>
+    <div class="hero hero_download">
+        <div class="margin_frame">
+            <div class="textcontainer">
+                <p class="hero_big">Client <br>Download</p>
+                <p class="hero_normal">게임플레이를 위해 런처 Client 설치가 필요합니다. 아래 버튼을 눌러 설치를 진행해주세요.</p>
+                <p class="p_16px">필요 하드디스크 여유공간 및 사양 : 하단 세부 사양 참고</p>
+            </div>
+            <div class="download_container">
+                <a class="download_btn">
+                    <div class="download_img"></div>
+                    <div class="texts">
+                        <h5>Windows</h5>
+                        <p class="btn_14px">Windows 7 64bit~</p>
+                    </div>
+                </a>
+                <a class="download_btn">
+                    <div class="download_img"></div>
+                    <div class="texts">
+                        <h5>Mac os</h5>
+                        <p class="btn_14px">Mac OS Ventura~</p>
+                    </div>
+                </a>
+                <a class="download_btn">
+                    <div class="link_img"></div>
+                    <div class="texts">
+                        <h5>Linux</h5>
+                        <p class="btn_14px">apt, yml, and more...</p>
+                    </div>
+                </a>
+            </div>
         </div>
         <div class="heroNav">
             <ul>
-                <li>설치 Guide</li>
-                <li>그래픽 드라이버 정보</li>
-                <li>고객센터</li>
+                <li><i class="fa-regular fa-circle-question"></i>설치 Guide</li>
+                <li><i class="fa-regular fa-circle-question"></i>그래픽 드라이버 정보</li>
+                <li><i class="fa-regular fa-circle-question"></i>고객센터</li>
             </ul>
         </div>
     </div>
     <section>
+        <div class="margin_frame">
         <p class="p_20px">데스크탑 Windows / Linux 시스템 사양</p>
         <table class="table_windows">
             <thead>
                 <tr>
-                    <td class="catalogue first">항목</td>
-                    <td class="catalogue">FHD 최소사양</td>
-                    <td class="catalogue">FHD 권장사양</td>
-                    <td class="catalogue">QHD 권장사양</td>
-                    <td class="catalogue">4K 권장사양</td>
-                    <td class="catalogue">시네마틱(하이엔드) 사양</td>
+                    <td class="catalogue_ind">항목</td>
+                    <td class="catalogue_ind">FHD 최소사양</td>
+                    <td class="catalogue_ind">FHD 권장사양</td>
+                    <td class="catalogue_ind">QHD 권장사양</td>
+                    <td class="catalogue_ind">4K 권장사양</td>
+                    <td class="catalogue_ind">시네마틱(하이엔드) 사양</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="catalogue first">프로세서</td>
+                    <td class="catalogue_first">프로세서</td>
                     <td class="catalogue">intel i3 10100<br>
                         AMD R3 2300X</td>
                     <td class="catalogue">intel i5 11400F<br>
@@ -99,7 +106,7 @@
                         AMD R9 7950X3D</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">하드디스크</td>
+                    <td class="catalogue_first">하드디스크</td>
                     <td class="catalogue" colspan="2">12GB 이상의 여유공간</td>
                     <!--<td class="catalogue"></td>-->
                     <td class="catalogue"colspan="2">133GB 이상의 여유공간<br>
@@ -109,7 +116,7 @@
                         (Xdx 16K 텍스처)</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">메모리</td>
+                    <td class="catalogue_first">메모리</td>
                     <td class="catalogue">8GB</td>
                     <td class="catalogue">16GB</td>
                     <td class="catalogue">32GB</td>
@@ -117,7 +124,7 @@
                     <td class="catalogue">64GB(ddr5 권장됨)</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">그래픽카드</td>
+                    <td class="catalogue_first">그래픽카드</td>
                     <td class="catalogue">Nvidia GTX 750Ti<br>
                         Radeon HD 7970</td>
                     <td class="catalogue">Nvidia GTX 2060 super<br>
@@ -130,7 +137,7 @@
                         Radeon 미지원</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">VRAM</td>
+                    <td class="catalogue_first">VRAM</td>
                     <td class="catalogue">VRAM 2GB 이상</td>
                     <td class="catalogue">VRAM 6GB</td>
                     <td class="catalogue">VRAM 8GB</td>
@@ -138,7 +145,7 @@
                     <td class="catalogue">VRAM 22GB</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">운영체제</td>
+                    <td class="catalogue_first">운영체제</td>
                     <td class="catalogue">64bit Windows 7</td>
                     <td class="catalogue" colspan="4">64bit Windows 10</td>
                     <!--<td class="catalogue"></td>-->
@@ -148,7 +155,7 @@
             </tbody>
         </table>
         <div class="explain">
-            <img src=""><!--데탑 그림-->
+            <img src="https://i.postimg.cc/5yzvxMH0/icon-dexktop.png"><!--데탑 그림-->
             <ul>
                 <li class="catalogue_14">최소사양은 게임을 구동할 수 있는 최소한의 사양을 의미하며, 권장사양은 평균 FPS 60 이상을 유지할 수 있는 사양을 의미합니다.</li>
                 <li class="catalogue_14">DirectX 11 이하 버전에서도 플레이 가능하나, 예기치 못한 버그 및 극도의 성능 하락이 발생할 수 있습니다.</li>
@@ -158,24 +165,27 @@
                 <li class="catalogue_14">시네마틱 옵션은 스크린샷, 영상 촬영용 옵션으로, 장시간 사용시 컴퓨터에 매우 큰 부하가 걸릴 수 있습니다.</li>
             </ul>
         </div>
+        </div>
+        
     </section>
 
     <section>
+        <div class="margin_frame">
         <p class="p_20px">노트북 Windows / Linux 시스템 사양</p>
         <table class="table_windows">
             <thead>
                 <tr>
-                    <td class="catalogue first">항목</td>
-                    <td class="catalogue">FHD 최소사양</td>
-                    <td class="catalogue">FHD 권장사양</td>
-                    <td class="catalogue">QHD 권장사양</td>
-                    <td class="catalogue">4K 권장사양</td>
-                    <td class="catalogue">시네마틱(하이엔드) 사양</td>
+                    <td class="catalogue_ind">항목</td>
+                    <td class="catalogue_ind">FHD 최소사양</td>
+                    <td class="catalogue_ind">FHD 권장사양</td>
+                    <td class="catalogue_ind">QHD 권장사양</td>
+                    <td class="catalogue_ind">4K 권장사양</td>
+                    <td class="catalogue_ind">시네마틱(하이엔드) 사양</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="catalogue first">프로세서</td>
+                    <td class="catalogue_first">프로세서</td>
                     <td class="catalogue">intel i7 9750H<br>
                         AMD R7 3750H</td>
                     <td class="catalogue">intel i5 1340p<br>
@@ -188,7 +198,7 @@
                         AMD R9 7945HX</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">하드디스크</td>
+                    <td class="catalogue_first">하드디스크</td>
                     <td class="catalogue" colspan="2">12GB 이상의 여유공간</td>
                     <!--<td class="catalogue"></td>-->
                     <td class="catalogue"colspan="2">80GB 이상의 여유공간<br>
@@ -198,7 +208,7 @@
                         (Xdx 16K 텍스처)</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">메모리</td>
+                    <td class="catalogue_first">메모리</td>
                     <td class="catalogue">8GB</td>
                     <td class="catalogue">16GB</td>
                     <td class="catalogue">32GB</td>
@@ -206,7 +216,7 @@
                     <td class="catalogue">64GB(ddr5 권장됨)</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">그래픽카드</td>
+                    <td class="catalogue_first">그래픽카드</td>
                     <td class="catalogue">Nvidia GTX 1050 MaxQ<br>
                         Radeon RX Vega 9</td>
                     <td class="catalogue">Nvidia GTX 2070 laptop<br>
@@ -218,7 +228,7 @@
                         with waterblock</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">VRAM</td>
+                    <td class="catalogue_first">VRAM</td>
                     <td class="catalogue">VRAM 2GB 이상</td>
                     <td class="catalogue">VRAM 6GB</td>
                     <td class="catalogue">VRAM 8GB</td>
@@ -226,7 +236,7 @@
                     <td class="catalogue">VRAM 22GB</td>
                 </tr>
                 <tr>
-                    <td class="catalogue first">운영체제</td>
+                    <td class="catalogue_first">운영체제</td>
                     <td class="catalogue">64bit Windows 7</td>
                     <td class="catalogue" colspan="4">64bit Windows 10</td>
                     <!--<td class="catalogue"></td>-->
@@ -236,7 +246,7 @@
             </tbody>
         </table>
         <div class="explain">
-            <img src=""><!--데탑 그림-->
+            <img src="https://i.postimg.cc/rm3xXpw3/icon-dexktop-1.png"><!--데탑 그림-->
             <ul>
                 <li class="catalogue_14">최소사양은 게임을 구동할 수 있는 최소한의 사양을 의미하며, 권장사양은 평균 FPS 60 이상을 유지할 수 있는 사양을 의미합니다.</li>
                 <li class="catalogue_14">DirectX 11 이하 버전에서도 플레이 가능하나, 예기치 못한 버그 및 극도의 성능 하락이 발생할 수 있습니다.</li>
@@ -245,22 +255,25 @@
                 <li class="catalogue_14">노트북 발열량, 그래픽카드 TGP에 따라 프레임 차이가 크게 발생할 수 있어, 데스크탑 플레이를 권장합니다.</li>
             </ul>
         </div>
+        </div>
+        
     </section>
 
     <section>
-        <p class="p_20px">노트북 Windows / Linux 시스템 사양</p>
+        <div class="margin_frame">
+            <p class="p_20px">노트북 Windows / Linux 시스템 사양</p>
         <table class="table_windows">
             <thead>
                 <tr>
-                    <td class="first catalogue">항목</td>
-                    <td class="catalogue">FHD 최소사양</td>
-                    <td class="catalogue">FHD 권장사양/td>
-                    <td class="catalogue">QHD권장사양</td>
+                    <td class="catalogue_ind">항목</td>
+                    <td class="catalogue_ind">FHD 최소사양</td>
+                    <td class="catalogue_ind">FHD 권장사양</td>
+                    <td class="catalogue_ind">QHD권장사양</td>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td class="first catalogue">프로세서</td>
+                    <td class="catalogue_first">프로세서</td>
                     <td class="catalogue">intel i3 9100
                         AMD R3 3200G
                         Apple M1</td>
@@ -272,7 +285,7 @@
                         Apple M2 pro</td>
                 </tr>
                 <tr>
-                    <td class="first catalogue">하드디스크</td>
+                    <td class="catalogue_first">하드디스크</td>
                     <td class="catalogue">11GB 이상의 여유공간
                         (Lite 2k 텍스쳐 적용)</td>
                     <td class="catalogue">11GB 이상의 여유공간
@@ -281,13 +294,13 @@
                         (Lite 4k 텍스쳐 적용)</td>
                 </tr>
                 <tr>
-                    <td class="first catalogue">메모리</td>
+                    <td class="catalogue_first">메모리</td>
                     <td  class="catalogue" colspan="2">8GB</td>
                     <!--<td class="catalogue"></td>-->
                     <td class="catalogue">16GB</td>
                 </tr>
                 <tr>
-                    <td class="first catalogue">그래픽카드</td>
+                    <td class="catalogue_first">그래픽카드</td>
                     <td class="catalogue">Nvidia GTX 460
                         Radeon HD 6870
                         Apple M1</td>
@@ -299,13 +312,13 @@
                         Apple M2 pro</td>
                 </tr>
                 <tr>
-                    <td class="first catalogue">VRAM</td>
+                    <td class="catalogue_first">VRAM</td>
                     <td class="catalogue">VRAM 1GB 이상</td>
                     <td class="catalogue">VRAM 2GB 이상</td>
                     <td class="catalogue">VRAM 6GB</td>
                 </tr>
                 <tr>
-                    <td class="first catalogue">운영체제</td>
+                    <td class="catalogue_first">운영체제</td>
                     <td class="catalogue">64bit Windows 7
                         Mac OS 최신 업데이트</td>
                     <td class="catalogue" colspan="2">64bit Windows 10
@@ -314,7 +327,7 @@
             </tbody>
         </table>
         <div class="explain">
-            <img src=""><!--데탑 그림-->
+            <img src="https://i.postimg.cc/vBcfNnb5/icon-dexktop-2.png"><!--데탑 그림-->
             <ul>
                 <li class="catalogue_14">최소사양은 게임을 구동할 수 있는 최소한의 사양을 의미하며, 권장사양은 평균 FPS 60 이상을 유지할 수 있는 사양을 의미합니다.</li>
                 <li class="catalogue_14">Mac OS, 저사양 PC를 위해 개발중인 텍스쳐 경량화 테스트 버전입니다. 치명적인 오류와 품질저하가 있을 수 있기 때문에 권장하지 않습니다.</li>
@@ -323,14 +336,19 @@
                 <li class="catalogue_14">텍스처 설치 페이지에서 라이트 텍스처를 설치할 경우 해당 사양으로 플레이할 수 있습니다.</li>
             </ul>
         </div>
+        </div>
     </section>
     <footer>
         <div class="footermenu"><!--flex, 좌우 끝 정렬로 벌리기-->
             <ul class="navbar">
                 <li><a href="#">이용약관</a></li>
+                <li class="line"></li>
                 <li><a href="#">개인정보처리방침</a></li>
+                <li class="line"></li>
                 <li><a href="#">문의하기</a></li>
+                <li class="line"></li>
                 <li><a href="#">사용자문제신고센터</a></li>
+                <li class="line"></li>
                 <li><a href="#">이벤트, 저작권 규약</a></li>
             </ul>
             <ul class="sns">
@@ -342,27 +360,29 @@
             </ul>
         </div>
         <div class="footerCaution">
-            <img src="" alt=""><!--겜 로고-->
+            <img src="https://i.ibb.co/wQMCW1g/glogo-white.png" alt="."><!--겜 로고-->
             <div class="footerimg">
-                <img src="" alt="R18"><!--18세경고-->
-                <img src="" alt="lang"><!--언어유해-->
-                <img src="" alt="violent"><!--폭력성-->
+                <img src="https://i.postimg.cc/VNmMYN3h/caution-copy.png" alt="R18"><!--18세경고-->
+                <img src="https://i.postimg.cc/9QGZ59NT/language-1.png" alt="lang"><!--언어유해-->
+                <img src="https://i.postimg.cc/vZRfNhXb/violence-1.png" alt="violent"><!--폭력성-->
             </div>
         </div>
         <div class="footerInfo">
-            <span class="footerInfo_nostring">TeamCyiva</span>
-            <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
-            <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
-            <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
-            <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
-            <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            <div class="rolltext">
+                <span class="footerInfo_string">TeamCyiva</span>
+                <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
+                <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
+                <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
+                <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
+                <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            </div>
         </div>
         <div class="sponsored">
-            <img src="https://i.postimg.cc/jjTZK8Lk/Audodesk-Gameware.png"><!--Autodesk Gameware-->
-            <img src="https://i.postimg.cc/MH59r1Wr/UE-Logo-horizontal-unreal-engine-white.png"><!--UE5-->
-            <img src="https://i.postimg.cc/xCT5NcGv/wwise-logo-rgb-7e17bcc5.png"><!--Wwise sound engine-->
+            <div class="container"><img src="https://i.postimg.cc/bw29GCyt/partner1.png"><!--Autodesk Gameware--></div>
+            <div class="container"><img src="https://i.postimg.cc/BQbg3ZRN/partner2.png"><!--UE5--></div>
+            <div class="container"><img src="https://i.postimg.cc/s2d95Yx0/partner3.png"><!--Wwise sound engine--></div>
         </div>
         <p class="footerCopy">Copyright TeamCyiva 2023 All Rights Reserved.</p>
     </footer>
