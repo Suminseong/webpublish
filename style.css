@@ -1,0 +1,1306 @@
+:root {
+    --black800:#090909;
+    --black700:#222222;
+    --black600:#434343;
+    --black500:#505050;
+    --black400:#7E7E7E;
+    --text-white:#f1f1f1;
+    --main-color:#D37831;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.hero{
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+/*-----------------------------------------기본적인설정들--------------------------------------------*/
+
+p{
+    margin: 0;
+}
+
+.hero_big{
+    color: var(--black-700);
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.hero_normal{
+    color: var(--black-700);
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+h1{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160.728%;
+    margin: 0;
+}
+
+h2{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160.728%;
+    margin: 0;
+}
+
+h3{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.728%;
+    letter-spacing: -0.72px;
+    margin: 0;
+}
+
+h5{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.728%;
+    margin: 0;
+}
+.p_l2px{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.728%;
+}
+.p_l4px{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160.728%;
+    letter-spacing: -0.28px;
+}
+
+.btn_l4px{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160.728%;
+    letter-spacing: -0.28px;
+}
+
+.p_l6px{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160.728%;
+    letter-spacing: -0.32px;
+}
+.p_l8px{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.728%;
+}
+.p_20px{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.728%;
+}
+
+.btn_14px{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160.728%;
+    letter-spacing: 0.14px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*---------------------------------------------------기본적인 임플란트-----------------------------------------------------------*/
+
+header{
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.companyAct{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+    height: 35px;
+    background-color: #505050;
+}
+
+.companyLogo{
+    display: flex;
+    width: 116px;
+    height: 35px;
+    padding: 0px 14px 0px 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.companyLogo img{
+    height: 35px;
+    width: auto;
+}
+
+.companyNav{
+    display: flex;
+    flex-basis: auto;
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.companyNav li a{
+    color: #090909;
+}
+
+header .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    height: 75px;
+    background: rgba(0, 0, 0, 0.8);
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar_gLogo{
+    display: flex;
+    width: 190px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.gamelogo{
+    width: 190px;
+    height: 75px;
+    flex-shrink: 0;
+    background-image: url('https://i.ibb.co/wQMCW1g/glogo-white.png');
+    background-size: cover;
+}
+
+.navbar_nav{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 75px;
+    padding: 0px 20px;
+    margin: 0;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.navbar_nav li{
+    display: flex;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    align-self: stretch;
+}
+
+.navfont{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.728%;
+    color: var(--text-white);
+}
+
+.navbar_user{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    height: 75px;
+    gap: 20px;
+
+}
+
+.start{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 75px;
+    background-color: var(--main-color);
+}
+
+.start p{
+    color: var(--text-white);
+}
+
+.navbar_user .user{
+    width: 40px;
+    height: 40px;
+    background-image: url('https://i.postimg.cc/5NLJPzBz/Vector.png');
+    background-size: cover;
+}
+
+/*---------------------------------------------------기본적인 헤더-----------------------------------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    flex-shrink: 1;
+    align-content: center;
+    width: 100vw;
+    background-color: var(--black600);
+    padding: 40px 0px;
+}
+
+.footermenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-shrink: 0;
+    height: 60px;
+}
+
+.footermenu ul{
+    margin: 0;
+    padding: 0;
+}
+
+footer .navbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .navbar li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    color: var(--text-white);
+}
+
+footer .navbar li a{
+    color: var(--text-white);
+}
+
+footer .navbar .line{
+    width: 1px;
+    height: 19px;
+    background-color: #eaeaea;
+}
+
+.sns{
+    display: flex;
+    align-items: flex-start;
+    gap: 17px;
+    padding-right: 10px;
+}
+
+.sns li{
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-brands{
+    flex-shrink: 0;
+}
+
+.footerCaution{
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    margin-bottom: 40px;
+}
+
+.footerCaution > img{
+    width: 190px;
+    height: 75px
+}
+
+.footerimg > img{
+    width: 60px;
+    height: auto;
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.rolltext{
+    width: 65vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.footerInfo_string{
+    color: #a9a9a9;
+}
+
+.footerInfo span{
+    display: flex;
+    flex-shrink: 0;
+}
+
+.sponsored{
+    display: flex;
+    justify-content: center;
+}
+
+.sponsored .container{
+    padding: 0px 12px;
+}
+
+.sponsored img{
+    width: 116px;
+    height: 30px;
+}
+
+.footerCopy{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    color: #a9a9a9;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+
+/*---------------------------------------------------기본적인 푸터-----------------------------------------------------------*/
+
+
+iframe{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    min-width: 1800px;
+    height: 85vh;
+    overflow: hidden;
+    z-index: -1000;
+    filter: brightness(0.5);
+    object-fit: cover;
+}
+
+.intro{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100vw;
+    height: 85vh;
+}
+
+.intr_textbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 55vh;
+    right: 50%;
+    left: 50%;
+    width: 889px;
+    height: 250px;
+    flex-shrink: 0;
+    transform: translate(-50%, -50%);
+    color: var(--text-white);
+}
+
+.intr_textbox h1{
+    text-align: center;
+}
+
+.intr_textbox p{
+    text-align: center;
+}
+
+.startbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 245px;
+    height: 75px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    background-color: var(--main-color);
+    color: #090909;
+    border-radius: 2px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.index_section1{
+    display: flex;
+    justify-content: center;
+    background-image: url('https://i.postimg.cc/9FQQFhkM/section-1.png');
+    background-size: cover;
+}
+
+.index_section1 .frame{
+    display: flex;
+    justify-content: center;
+    width: 75vw;
+    height: 600px;
+    padding: 0px 110px;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+}
+
+.frame p{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160.728%;
+    letter-spacing: -0.32px;
+    margin-top: 10px;
+}
+
+.index_section1 .frame .image{
+    width: 600px;
+    height: 300px;
+    background-image: url('https://i.postimg.cc/t42xBkVS/coffin.jpg');
+    background-size: cover;
+}
+
+.index_section1 .frame .textbox{
+    color: var(--text-white);
+}
+
+.index_section2{
+    display: flex;
+    justify-content: center;
+    background-image: url('https://i.postimg.cc/L5nQNDDj/castle-2.png');
+    background-size: cover;
+    padding: 12vh 0;
+}
+
+.index_section2 .frame{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index_section2 .frame .textbox{
+    display: flex;
+    width: 34vw;
+    padding: 60px 0px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    background: radial-gradient(48.59% 50% at 50% 50%, #CDCDCD 0%, rgba(205, 205, 205, 0.00) 100%);
+    margin-top: 40px;
+}
+
+.img_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.env_img1{
+    width: 22vw;
+    height: 16vh;
+}
+.env_img2{
+    width: 34vw;
+    height: 23vh;
+}
+.env_img3{
+    width: 22vw;
+    height: 16vh;
+}
+
+.morebtn{
+    display: flex;
+    justify-content: space-between;
+    height: 3vh;
+    width: 10vh;
+    padding: 0 1vw;
+    align-items: center;
+    border: 1px solid #fff;
+    color: white;
+}
+
+.index_section3{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 82vh;
+    background-image: url('https://i.postimg.cc/g0mw3tzB/section-2.png');
+    background-size: cover;
+}
+
+.index_section3 .frame{
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12vh 0;
+    color: var(--text-white);
+}
+
+.index_section3 .frame p{
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 16px;
+    line-height: 170%;
+}
+
+.index_section3 .frame .morebtn{
+    display: flex;
+    justify-content: space-between;
+    height: 3vh;
+    width: 10vh;
+    padding: 0 1vw;
+    align-items: center;
+    border: 1px solid #fff;
+    color: white;
+}
+
+.index_section4{
+    box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.79)
+}
+
+.index_section4 h2{
+    color: #eaeaea;
+}
+
+.index_section4 .frame{
+    background-color: #090909;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 91vh;
+}
+
+.index_section4 .chart{
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+}
+
+.workhover_container{
+    color: var(--text-white);
+}
+
+.char_image{
+    display: flex;
+    flex-grow: 1;
+    height: 750px;
+    background-repeat: no-repeat;
+    transition: all 420ms ease-in-out;
+}
+
+.char_image:hover{
+    flex-grow: 4;
+}
+
+.charbox1{
+    background-image: url('https://i.ibb.co/yFLD5cf/ben-donley-moneyshot2.png');  
+    filter: grayscale(1);
+    &:hover{
+        filter: grayscale(0);
+    }
+}
+.charbox2{
+    background-image: url('https://i.postimg.cc/3Rcb18Ns/magcian.png');  
+    filter: grayscale(1);
+    &:hover{
+        filter: grayscale(0);
+    }
+}
+.charbox3{
+    background-image: url('https://i.postimg.cc/fW6MTZCq/hunter.png');  
+    filter: grayscale(1);
+    &:hover{
+        filter: grayscale(0);
+    }
+}
+.charbox4{
+    background-image: url('https://i.ibb.co/jDzRWWB/explorer.png');  
+    filter: grayscale(1);
+    &:hover{
+        filter: grayscale(0);
+    }
+}
+.charbox5{
+    background-image: url('https://i.postimg.cc/qvNccsyv/vagabond.png'); 
+    filter: grayscale(1); 
+    &:hover{
+        filter: grayscale(0);
+    }
+}
+.charbox6{
+    background-image: url('https://i.postimg.cc/SKpXXCG5/you.png');  
+    filter: grayscale(1);
+    &:hover{
+        filter: grayscale(0);
+    }
+}
+
+.workhover_container{
+    display: flex;
+    flex-direction: row;
+}
+
+/*JS가 사용하는 switch styles*/
+
+.hoverswitch0,
+.hoverswitch1,
+.hoverswitch2,
+.hoverswitch3,
+.hoverswitch4,
+.hoverswitch5,
+.hoverswitch6 {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+/*JS가 사용하는 switch styles*/
+
+.index_section5 {
+    width: 100vw;
+    height: 80vh;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Set your preferred height */
+    overflow: hidden;
+}
+
+#carousel-list {
+    display: flex;
+    height: 100%;
+    width: 200%; /* Double the width for duplication of items */
+    transition: transform 0.5s ease; /* Smooth transition effect */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 720px; /* Adjust the width as needed */
+    height: 100%; /* Set your preferred height */
+    background-size: cover;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.carousel-item1 {
+    background-image: url('https://i.postimg.cc/255gRxkX/video.png');
+}
+.carousel-item2 {
+    background-image: url('https://i.postimg.cc/RhwDQsdq/video-1.png');
+}
+.carousel-item3 {
+    background-image: url('https://i.postimg.cc/0QT4SRpL/video-2.png');
+}
+.carousel-item4 {
+    background-image: url('https://i.postimg.cc/25XMzB3j/video-3.png');
+}
+.carousel-item5 {
+    background-image: url('https://i.postimg.cc/76GcbYT3/video-4.png');
+}
+
+/* Hide scrollbar */
+#wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+#wrapper {
+    scrollbar-width: none;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------여기부터 download.html---------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+.hero_download{
+    height: 60vh;
+    width: 100vw;
+    background-image: url('https://i.postimg.cc/SsVwQwMW/Frame-23-1.png');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 5vh;
+}
+
+.hero_normal{
+    margin-top: 20px;
+}
+
+.download_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 1;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.download_btn{
+    display: inline-flex;
+    align-items: center;
+    height: 7vh;
+    width: 14vw;
+    padding: 10px 20px;
+    border-radius: 1px;
+    background: #F8E7AD;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.download_btn .texts{
+    border-left: 1px solid #000;
+    padding-left: 30px;
+}
+
+.download_img{
+    background-image: url('https://i.postimg.cc/BvPRW4Hy/Frame-24.png');
+    background-size: 60px 60px;
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.link_img{
+    background-image: url('https://i.postimg.cc/HxGRdRtL/Frame-24-1.png');
+    background-size: 60px 60px;
+    margin-right: 30px;
+    width: 60px;
+    height: 60px;
+}
+
+.margin_frame{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heroNav{
+    display: flex;
+    align-self: flex-end;
+    width: 100vw;
+    height: 9vh;
+    justify-content: center;
+    padding: 0px 0vw;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #A6A6A6;
+}
+
+.heroNav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    text-align: center;
+}
+
+.heroNav ul li{
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    color: var(--navGy, #535353);
+    text-align: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.728%;
+}
+
+.heroNav ul li a{
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    color: var(--navGy, #535353);
+    text-align: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160.728%;
+}
+
+.heroNav i{
+    margin-right: 5px;
+}
+
+.table_windows {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.table_windows th, .table_windows td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    height: 3vh;
+    flex: 1;
+}
+
+.table_windows .catalogue {
+    background-color: #ffffff;
+}
+
+.table_windows .catalogue_ind{
+    background-color: #dcdcdc;
+}
+
+.table_windows .catalogue_first {
+    background-color: #dcdcdc;
+}
+
+.table_windows thead th {
+    background-color: #dcdcdc;
+}
+
+.explain{
+    display: inline-flex;
+    gap: 10px;
+    align-items: flex-start;
+    align-items: center;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+}
+
+.explain img{
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------여기부터 cutomerservice.html---------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+body > h3{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.hero_service{
+    background-image: url('https://i.postimg.cc/vT9nxQDp/guild3-1.png');
+}
+
+.postboard {
+    position: relative;
+    background-image: url('https://i.postimg.cc/xTBgh7yp/tavernboard-1.png');
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+}
+
+.postit,
+.editable {
+    width: 300px;
+    height: 200px;
+    background-color: #dadada;
+    position: absolute;
+}
+
+.postit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160.728%;
+
+}
+
+.editable {
+    cursor: pointer;
+}
+
+.noeditable {
+    cursor: default;
+    user-select: none;
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.notionboard{
+    margin-bottom: 50px;
+}
+
+.complainform {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fullcomp{
+    width: 75vw;
+    margin-right: auto;
+    margin-left: auto;
+    height: 500px;
+}
+
+.firstline {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.firstline input {
+    width: calc(50% - 5px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.content-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.send {
+    display: block;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 20vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------------------------------------------------------------------------*/
+/*--------------------------------여기부터 guide.html------------------------------------*/
+/*--------------------------------------------------------------------------------------*/
+
+.hero_guide{
+    background-image: url('https://i.postimg.cc/XvppyVzQ/lectureroom-1.png');
+}
+
+.armor_gears{
+    position: relative;
+    background-color: #000;
+    background-image: url('https://i.postimg.cc/qM1KtZ7B/ed-pantera-sub02-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 630px;
+    height: 767px;
+}
+
+.gears_hand1{
+    position: absolute;
+    top: 289px;
+    left: 93px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 70px;
+    height: 78px;
+    flex-shrink: 0;
+}
+.gears_hand2{
+    position: absolute;
+    top: 298px;
+    left: 477px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 70px;
+    height: 95px;
+    flex-shrink: 0;
+}
+.gears_arm1{
+    position: absolute;
+    top: 147px;
+    left: 131px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 75px;
+    height: 142px;
+    flex-shrink: 0;
+}
+.gears_arm2{
+    position: absolute;
+    top: 134px;
+    left: 410px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 75px;
+    height: 139px;
+    transform: rotate(-26.5deg);
+    flex-shrink: 0;
+}
+.gears_shoulder1{
+    position: absolute;
+    top: 56px;
+    left: 179px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 70px;
+    height: 82px;
+    flex-shrink: 0;
+}
+.gears_shoulder2{
+    position: absolute;
+    top: 52px;
+    left: 392px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 71px;
+    height: 76px;
+    flex-shrink: 0;
+}
+.gears_head{
+    position: absolute;
+    top: 12px;
+    left: 283px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 74px;
+    height: 69px;
+    flex-shrink: 0;
+}
+.gears_torso{
+    position: absolute;
+    top: 105px;
+    left: 249px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 143px;
+    height: 139px;
+    flex-shrink: 0;
+}
+.gears_tasset{
+    position: absolute;
+    top: 261px;
+    left: 216px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 221px;
+    height: 79px;
+    flex-shrink: 0;
+}
+.gears_leg1{
+    position: absolute;
+    top: 461px;
+    left: 234px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 75px;
+    height: 202px;
+    flex-shrink: 0;
+}
+.gears_leg2{
+    position: absolute;
+    top: 461px;
+    left: 333px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 85px;
+    height: 185px;
+    flex-shrink: 0;
+}
+.gears_shoe1{
+    position: absolute;
+    top: 663px;
+    left: 234px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 59px;
+    height: 80px;
+    flex-shrink: 0;
+}
+.gears_shoe2{
+    position: absolute;
+    top: 646px;
+    left: 343px;
+    border: 1px dashed rgba(125, 125, 125, 0.50);
+    width: 81px;
+    height: 106px;
+    flex-shrink: 0;
+}
+
+.armor_gears p{
+    position: absolute;
+    bottom: 10px;
+    left: 5px;
+    color: var(--text-white);
+}
+
+.script_container{
+    flex: 1;
+    height: 767px
+}
+
+.guidehand{
+    display: none;
+}
+.guidearm{
+    display: none;
+}
+.guideshoulder{
+    display: none;
+}
+.guidehead{
+    display: none;
+}
+.guidetorso{
+    display: none;
+}
+.guidetasset{
+    display: none;
+}
+.guideleg{
+    display: none;
+}
+.guideshoes{
+    display: none;
+}
+
+.gears{
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gears .margin_frame{
+    display: flex;
+    flex-direction: row;
+    gap: 6.6vw;
+    margin-top: 90px;
+}
+
