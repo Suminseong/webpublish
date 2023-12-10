@@ -3,121 +3,236 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=Noto+Sans&family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!--폰트어썸 6.2-->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=IBM+Plex+Serif:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--폰트어썸-->
     <link rel="stylesheet" href="style.css" type="text/css">
     <script></script>
 </head>
 <body>
     <header><!--positio fixed 0,0,0-->
-        <div class="conpanyAct">
-            <a class="companyLogo"></a>
+        <div class="companyAct">
+            <a class="companyLogo"><img src="https://i.ibb.co/1vJy6Yr/clogo.png"></a>
             <ul class="companyNav">
                 <li><a href="#">Our Games</a></li>
                 <li><a href="#">News</a></li>
             </ul>
         </div>
         <div class="navbar"><!--투명도 0.8-->
-            <div class="navbar_gLogo">
-                <a class="gamelogo" href="index.html"></a>
+            <div class="left">
+                <div class="navbar_gLogo">
+                    <a class="gamelogo" href="index.html"></a>
+                </div>
+                <ul class="navbar_nav">
+                    <li><a class="navfont" href="newinfo.html">새소식</a></li>
+                    <li><a class="navfont" href="notification.html">공지사항</a></li>
+                    <li><a class="navfont" href="camp.html">모험가 캠프</a></li>
+                    <li><a class="navfont" href="guide.html">신참가이드</a></li>
+                    <li><a class="navfont" href="auction.html">길드거래소</a></li>
+                    <li><a class="navfont" href="cutomersevice.html">고객센터</a></li>
+                    <li><a class="navfont" href="#">자유게시판</a></li>
+                    <li><a class="navfont" href="download.html">다운로드</a></li>
+                </ul>
             </div>
-            <ul class="navbar_nav">
-                <li><a href="newinfo.html">새소식</a></li>
-                <li><a href="notification.html">공지사항</a></li>
-                <li><a href="camp.html">모험가 캠프</a></li>
-                <li><a href="guide.html">신참가이드</a></li>
-                <li><a href="auction.html">길드거래소</a></li>
-                <li><a href="cutomersevice.html">고객센터</a></li>
-                <li><a href="threads,html">자유게시판</a></li>
-                <li><a href="download.html">다운로드</a></li>
-            </ul>
             <div class="navbar_user">
-                <a class="start" href="#"></a><!--게임플레이-->
+                <a class="start" href="#"><p>게임플레이</p></a><!--게임플레이-->
                 <a class="user" href="#"></a><!--유저아이콘-->
             </div>
         </div>
     </header>
-    <div class="hero">
-        <p class="hero_big">Gamer <br>Support Services</p>
-        <c class="hero_normal">도움이 필요하신가요? 이곳에서 도와드리겠습니다.</c>
-        <p>몬스터한테 물려 죽었다는 작은 불만부터 게임 내 버그와 문의까지 접수받습니다.</p>
+    <div class="hero hero_service">
+        <div class="margin_frame">
+            <p class="hero_big">Gamer <br>Support Services</p>
+            <p class="hero_normal">도움이 필요하신가요? 이곳에서 도와드리겠습니다.</p>
+            <p>몬스터한테 물려 죽었다는 작은 불만부터 게임 내 버그와 문의까지 접수받습니다.</p>
+        </div>
         <div class="heroNav">
             <ul>
-                <li><a href="#">자주 묻는 질문</a></li>
-                <li><a href="#">구매 및 결제 문의</a></li>
-                <li><a href="#">계정 및 보안 문의</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i>자주 묻는 질문</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i>구매 및 결제 문의</a></li>
+                <li><a href="#"><i class="fa-regular fa-circle-question"></i>계정 및 보안 문의</a></li>
             </ul>
         </div>
     </div>
-    <section>
-        <div class="postboard"><!--상대적 위치 기준점-->
-            <div class="postit noeditable">엄<br>준<br>식</div>
-            <div class="postit noeditable">문득 한국공대를 다니다보니 대상혁이 새삼 대단함을 느낀다...</div>
-            <div class="postit noeditable">레이크타운 교회건물 벽뚫 버그 있어요 이거 수정좀</div>
-            <div class="postit noeditable">돈 수급처 초입 던전 개 창렬인데 이거 패치 언제함???뉴비 폐사한다;;</div>
-            <div class="postit noeditable">양심고백 롤드컵 결승은 제우스가 지렸다</div>
-            <div class="postit noeditable">여기 게임사 그래픽 팀은 밥먹고 그림만 그리냐? 비주얼 퀄리티 지리네;</div>
-            <div class="postit noeditable">초보자들 초반에 칼 비싼거 사지마라 진짜 구라안치고 초반에는 칼 쓸 일이 없음</div>
-            <div class="postit noeditable">망겜 언제 섭종하냐;<br>벌써 몇번째 리스폰임</div>
-            <div class="postit noeditable">게임 운영진 전부 모솔에 탈모임내가 봐서 암.</div>
-            <div class="postit noeditable">옆에 글 허위사실인듯ㅇㅇ;</div>
-            <div class="postit noeditable">서버 감자로 만들었음? 진짜 핑 튀는거 언제 고치냐? 확 튀겨벌라</div>
-            <div class="postit noeditable">사양 왤케높냐 이거 750ti 보내줘야되나;</div>
-            <div contenteditable="true" class="postit editable">새 포스트 내용 쓰기</div>
-        </div>
+    <h3>Notion Board</h3>
+    <section class="notionboard">
+        <body>
+            <div class="postboard">
+              <div class="postit noeditable">엄<br>준<br>식</div>
+              <div class="postit noeditable">문득 한국공대를 다니다보니 대상혁이 새삼 대단함을 느낀다...</div>
+              <div class="postit noeditable">레이크타운 교회건물 벽뚫 버그 있어요 이거 수정좀</div>
+              <div class="postit noeditable">돈 수급처 초입 던전 개 창렬인데 이거 패치 언제함???뉴비 폐사한다;;</div>
+              <div class="postit noeditable">양심고백 롤드컵 결승은 제우스가 지렸다</div>
+              <div class="postit noeditable">여기 게임사 그래픽 팀은 밥먹고 그림만 그리냐? 비주얼 퀄리티 지리네;</div>
+              <div class="postit noeditable">초보자들 초반에 칼 비싼거 사지마라 진짜 구라안치고 초반에는 칼 쓸 일이 없음</div>
+              <div class="postit noeditable">망겜 언제 섭종하냐;<br>벌써 몇번째 리스폰임</div>
+              <div class="postit noeditable">게임 운영진 전부 모솔에 탈모임내가 봐서 암.</div>
+              <div class="postit noeditable">운영자 사실 탈모 아니래(운영자임)</div>
+              <div class="postit noeditable">서버 감자로 만들었음? 진짜 핑 튀는거 언제 고치냐? 확 튀겨벌라</div>
+              <div class="postit noeditable">사양 왤케높냐 이거 750ti 보내줘야되나;</div>
+              <div contenteditable="true" class="postit editable">새 포스트 내용 쓰기</div>
+              <button class="edit-button">편집 종료</button>
+            </div>
+            <div>
+              <input type="text" id="newPostitText" placeholder="새로운 포스트잇 내용 입력">
+              <button id="addPostitButton">입력</button>
+            </div>
         <p class="p_16px">허위사실, 선정성, 유해성 글 작성시 사용 정지 및 고발조치될 수 있습니다.</p>
     </section>
-    <section>
+    <section class="form">
+        <h3>문의 보내기</h3>
         <div class="complainform">
-            <form name="문의창" action="complain.js" method="post">
-                <input type="text" placeholder="제목">
-                <input type="text" placeholder="유저 ID">
-                <input type="text" placeholder="내용을 입력해주세요&#13;&#10;
-                - 답변 및 조치에 최대 영업일 5일이 소요됩니다.&#13;&#10;
-                - 구매 및 결제, 보안 관련 중요 문의는 상단 매뉴에서 접수시 즉시 조치됩니다.">
+            <form id="complainForm" name="문의창" action="complain.js" method="post">
+                <div class="firstline">
+                    <input type="text" placeholder="제목">
+                    <input type="text" placeholder="유저 ID">
+                </div>
+                <input class="fullcomp" type="text" id="contentInput" placeholder="내용을 입력해주세요">
             </form>
+            <a class="send" onclick="submitForm()">문의 보내기</a>
         </div>
     </section>
     <footer>
         <div class="footermenu"><!--flex, 좌우 끝 정렬로 벌리기-->
             <ul class="navbar">
                 <li><a href="#">이용약관</a></li>
+                <li class="line"></li>
                 <li><a href="#">개인정보처리방침</a></li>
+                <li class="line"></li>
                 <li><a href="#">문의하기</a></li>
+                <li class="line"></li>
                 <li><a href="#">사용자문제신고센터</a></li>
+                <li class="line"></li>
                 <li><a href="#">이벤트, 저작권 규약</a></li>
             </ul>
             <ul class="sns">
-                <li class="icon"><a></a></li><!--인별-->
-                <li class="icon"><a></a></li><!--페북-->
-                <li class="icon"><a></a></li><!--트윗-->
-                <li class="icon"><a></a></li><!--디코-->
-                <li class="icon"><a></a></li><!--유튭-->
+                <li class="icon"><a><i class="fa-brands fa-instagram"></i></a></li><!--인별-->
+                <li class="icon"><a><i class="fa-brands fa-facebook"></i></a></li><!--페북-->
+                <li class="icon"><a><i class="fa-brands fa-twitter"></i></a></li><!--트윗-->
+                <li class="icon"><a><i class="fa-brands fa-discord"></i></a></li><!--디코-->
+                <li class="icon"><a><i class="fa-brands fa-youtube"></i></a></li><!--유튭-->
             </ul>
         </div>
         <div class="footerCaution">
-            <img src="" alt=""><!--겜 로고-->
+            <img src="https://i.ibb.co/wQMCW1g/glogo-white.png" alt="."><!--겜 로고-->
             <div class="footerimg">
-                <img src="" alt="R18"><!--18세경고-->
-                <img src="" alt="lang"><!--언어유해-->
-                <img src="" alt="violent"><!--폭력성-->
+                <img src="https://i.postimg.cc/VNmMYN3h/caution-copy.png" alt="R18"><!--18세경고-->
+                <img src="https://i.postimg.cc/9QGZ59NT/language-1.png" alt="lang"><!--언어유해-->
+                <img src="https://i.postimg.cc/vZRfNhXb/violence-1.png" alt="violent"><!--폭력성-->
             </div>
         </div>
         <div class="footerInfo">
-            <span class="footerInfo_nostring">TeamCyiva</span>
-            <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
-            <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
-            <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
-            <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
-            <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            <div class="rolltext">
+                <span class="footerInfo_string">TeamCyiva</span>
+                <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
+                <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
+                <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
+                <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
+                <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            </div>
         </div>
         <div class="sponsored">
-            <img src=""><!--Autodesk Gameware-->
-            <img src=""><!--UE5 Lumen Technology-->
-            <img src=""><!--Wwise sound engine-->
+            <div class="container"><img src="https://i.postimg.cc/bw29GCyt/partner1.png"><!--Autodesk Gameware--></div>
+            <div class="container"><img src="https://i.postimg.cc/BQbg3ZRN/partner2.png"><!--UE5--></div>
+            <div class="container"><img src="https://i.postimg.cc/s2d95Yx0/partner3.png"><!--Wwise sound engine--></div>
         </div>
         <p class="footerCopy">Copyright TeamCyiva 2023 All Rights Reserved.</p>
     </footer>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const postits = document.querySelectorAll('.postit');
+      const postboard = document.querySelector('.postboard');
+      let isDragging = false;
+      let offsetX, offsetY, initialX, initialY, currentPostit;
+
+      postits.forEach(postit => {
+        setRandomPosition(postit);
+        postit.addEventListener('mousedown', (e) => startDragging(e, postit));
+      });
+
+      const editablePostit = document.querySelector('.editable');
+      setRandomPosition(editablePostit);
+
+      editablePostit.addEventListener('mousedown', (e) => startDragging(e, editablePostit));
+
+      document.addEventListener('mouseup', stopDragging);
+
+      function setRandomPosition(element) {
+        const maxX = postboard.clientWidth - element.clientWidth;
+        const maxY = postboard.clientHeight - element.clientHeight;
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+
+        element.style.left = randomX + 'px';
+        element.style.top = randomY + 'px';
+      }
+
+      function startDragging(e, postit) {
+        isDragging = true;
+        currentPostit = postit;
+        const rect = postit.getBoundingClientRect();
+        offsetX = e.clientX - rect.left;
+        offsetY = e.clientY - rect.top;
+        initialX = e.clientX - offsetX;
+        initialY = e.clientY - offsetY;
+
+        postit.style.cursor = 'grabbing';
+      }
+
+      function stopDragging() {
+        isDragging = false;
+        if (currentPostit) {
+          currentPostit.style.cursor = 'grab';
+        }
+      }
+
+      document.addEventListener('mousemove', drag);
+
+      function drag(e) {
+        if (isDragging) {
+          const x = e.clientX - offsetX;
+          const y = e.clientY - offsetY;
+
+          const rect = currentPostit.getBoundingClientRect();
+          const maxX = postboard.clientWidth - rect.width;
+          const maxY = postboard.clientHeight - rect.height;
+
+          const adjustedX = Math.min(Math.max(x, 0), maxX);
+          const adjustedY = Math.min(Math.max(y, 0), maxY);
+
+          currentPostit.style.left = adjustedX + 'px';
+          currentPostit.style.top = adjustedY + 'px';
+        }
+      }
+
+      const addPostitButton = document.getElementById('addPostitButton');
+
+      addPostitButton.addEventListener('click', addNewPostit);
+
+      function addNewPostit() {
+        const newPostitText = document.getElementById('newPostitText').value;
+        
+        if (newPostitText.trim() !== '') {
+          const newPostit = document.createElement('div');
+          newPostit.classList.add('postit', 'noeditable');
+          newPostit.innerHTML = newPostitText;
+
+          setRandomPosition(newPostit);
+
+          newPostit.addEventListener('mousedown', (e) => startDragging(e, newPostit));
+
+          postboard.appendChild(newPostit);
+        }
+      }
+    });
+
+    function submitForm() {
+        var textInputs = document.querySelectorAll('input[type="text"]');
+        textInputs.forEach(function(input) {
+            input.value = '';
+        });
+        alert('전송되었습니다');
+    }
+  </script>
