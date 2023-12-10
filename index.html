@@ -3,41 +3,44 @@
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=Noto+Sans&family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500;700&family=IBM+Plex+Serif:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" /><!--폰트어썸-->
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
     <header><!--positio fixed 0,0,0-->
-        <div class="conpanyAct">
-            <a class="companyLogo"></a>
+        <div class="companyAct">
+            <a class="companyLogo"><img src="https://i.ibb.co/1vJy6Yr/clogo.png"></a>
             <ul class="companyNav">
                 <li><a href="#">Our Games</a></li>
                 <li><a href="#">News</a></li>
             </ul>
         </div>
         <div class="navbar"><!--투명도 0.8-->
-            <div class="navbar_gLogo">
-                <a class="gamelogo" href="index.html"></a>
+            <div class="left">
+                <div class="navbar_gLogo">
+                    <a class="gamelogo" href="index.html"></a>
+                </div>
+                <ul class="navbar_nav">
+                    <li><a class="navfont" href="newinfo.html">새소식</a></li>
+                    <li><a class="navfont" href="notification.html">공지사항</a></li>
+                    <li><a class="navfont" href="camp.html">모험가 캠프</a></li>
+                    <li><a class="navfont" href="guide.html">신참가이드</a></li>
+                    <li><a class="navfont" href="auction.html">길드거래소</a></li>
+                    <li><a class="navfont" href="cutomersevice.html">고객센터</a></li>
+                    <li><a class="navfont" href="#">자유게시판</a></li>
+                    <li><a class="navfont" href="download.html">다운로드</a></li>
+                </ul>
             </div>
-            <ul class="navbar_nav">
-                <li><a href="newinfo.html">새소식</a></li>
-                <li><a href="notification.html">공지사항</a></li>
-                <li><a href="camp.html">모험가 캠프</a></li>
-                <li><a href="guide.html">신참가이드</a></li>
-                <li><a href="auction.html">길드거래소</a></li>
-                <li><a href="cutomersevice.html">고객센터</a></li>
-                <li><a href="threads,html">자유게시판</a></li>
-                <li><a href="download.html">다운로드</a></li>
-            </ul>
             <div class="navbar_user">
-                <a class="start" href="#"></a><!--게임플레이-->
+                <a class="start" href="#"><p class="btn_14px">게임플레이</p></a><!--게임플레이-->
                 <a class="user" href="#"></a><!--유저아이콘-->
             </div>
         </div>
     </header>
     <div class="intro">
-        <video src="intr.mp4" muted autoplay loop></video><!--미지원시 검은 화면으로 나올 것. 동영상을 링크로 넣는 방법은 없을까?-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AfDwtHbRDoA?si=sryxskcN-g-G8P39&amp;controls=0&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="intr_textbox">
             <h1>모험, 보물, 그리고 죽음</h1>
             <p class="p_20px">살아남는 자에게는 무궁한 영광 있으리</p>
@@ -46,25 +49,27 @@
     </div>
     <section class="index_section1">
         <div class="frame"><!--frame 태그는 좌우 여백을 지정함.-->
-            <img src="">
+            <div class="image"></div>
             <div class="textbox">
                 <h3>이것은 당신의 죽음으로 완성되는 이야기</h3>
-                <p class="p_16px">당신이 용사가 되었든, 은둔형 백수가 되었든, 죽음은 그런 뒷 사정 따위 신경쓰지 않습니다. 
+                <p class="p_16px">당신이 용사가 되었든, 은둔형 백수가 되었든, 죽음은 그런 뒷 사정 따위 신경쓰지 않습니다. <br>
                     이야기의 결말은 언제나 ‘당신은 사망했습니다’로 맺어지게 됩니다.</p>
             </div>
         </div>
     </section>
     <section class="index_section2">
         <div class="frame">
-            <img class="img1" src="">
-            <img class="img2" src="">
-            <img class="img3" src="">
+            <div class="img_container">
+                <img class="env_img1" src="https://i.postimg.cc/QMC7Bzdg/camp-2.png">
+                <img class="env_img2" src="https://i.postimg.cc/HLNybtrq/winter-14-1.png">
+                <img class="env_img3" src="https://i.postimg.cc/y8v98KsY/volcano-1.png">
+            </div>
             <div class="textbox">
                 <h3>한계까지 강요되는 선택과 결정</h3>
-                <p class="p_16px">세상은 당신에게 우호적이지 않습니다. 매 순간 당신은 선택을 강요받고, 그 결정에 후회하게 되겠죠.
+                <p class="p_16px">세상은 당신에게 우호적이지 않습니다. 매 순간 당신은 선택을 강요받고, 그 결정에 후회하게 되겠죠.<br>
                     중요한 것은, 어떤 결정을 내리고, 어떤 결과를 맞이하든 그것은 당신의 책임이라는 점 입니다.</p>
             </div>
-            <a class="morebtn btn_14px">더보기</a>
+            <a class="morebtn btn_14px">더보기 <i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
     </section>
     <section class="index_section3">
@@ -72,68 +77,99 @@
             <h3>끝없이 펼쳐진 오픈월드, 다양한 기후와 환경</h3>
             <p class="p_16px">완전히 개방된 오픈월드와 사실적인 날씨, 입체적으로 설계된 생태 환경속에서
                 때로는 대자연과의 사투를 벌여야 할 수도 있습니다.</p>
-            <a class="morebtn btn_14px">더보기</a>
+            <a class="morebtn btn_14px">더보기 <i class="fa-solid fa-arrow-right-long"></i></a>
         </div>
     </section>
     <section class="index_section4">
         <div class="frame">
             <h2>직업군</h2>
-            <div class="chart"><!--flex 각 3 1 1 1 1 1 줬다가 hover하는거 3으로 바뀌게, 밑의 hoverswitch display none 조정-->
-                <div class="charbox1 char_image"><img src="https://i.ibb.co/yFLD5cf/ben-donley-moneyshot2.png"></div>
-                <div class="charbox2 char_image"><img src="https://i.postimg.cc/3Rcb18Ns/magcian.png"></div>
-                <div class="charbox3 char_image"><img src="https://i.postimg.cc/fW6MTZCq/hunter.png"></div>
-                <div class="charbox4 char_image"><img src="https://i.ibb.co/jDzRWWB/explorer.png"></div>
-                <div class="charbox5 char_image"><img src="https://i.postimg.cc/qvNccsyv/vagabond.png"></div>
-                <div class="charbox6 char_image"><img src="https://i.postimg.cc/SKpXXCG5/you.png"></div>
+            <div class="chart"><!--flex-grow 각 3 1 1 1 1 1 줬다가 hover하는거 3으로 바뀌게, 밑의 hoverswitch display none 조정--><!--https://joooohee.tistory.com/52 참고-->
+                <div class="charbox1 char_image" onmouseover="showHover(1)" onmouseout="hideHover(1)"></div>
+                <div class="charbox2 char_image" onmouseover="showHover(2)" onmouseout="hideHover(2)"></div>
+                <div class="charbox3 char_image" onmouseover="showHover(3)" onmouseout="hideHover(3)"></div>
+                <div class="charbox4 char_image" onmouseover="showHover(4)" onmouseout="hideHover(4)"></div>
+                <div class="charbox5 char_image" onmouseover="showHover(5)" onmouseout="hideHover(5)"></div>
+                <div class="charbox6 char_image" onmouseover="showHover(6)" onmouseout="hideHover(6)"></div>
             </div>
-            <div class="hoverswitch1">
-                <h3>MERCENARY</h3>
-                <p class="p_16px">전쟁이 벌어지고 피가 흐를 수록 용병이 할 일은 더욱 많을것입니다.
-                    칼밥먹고 사는 더러운 놈이라는 소리를 듣지만, 아무렴 어떤가요? 피묻은 돈이 더욱 두둑한 법입니다.</p>
-                <a class="morebtn btn_14px" href="#">더보기</a>
-            </div>
-            <div class="hoverswitch2">
-                <h3>MAGICIAN</h3>
-                <p class="p_16px">매지션은 자연의 마나와 소통하며 독특한 현상인 마법을 구현합니다. 
-                    엄청 화려하고 멋있고, 또 강하기까지 합니다만, 그 뒤에서는 피나는 노력이 필요합니다.</p>
-                <a class="morebtn btn_14px" href="#"></a>
-            </div>
-            <div class="hoverswitch3">
-                <h3>HUNTER</h3>
-                <p class="p_16px">사냥꾼은 몬스터와 동물을 사냥하고, 그 부산물을 판매하는것으로 생활합니다.
-                    새벽의 고요한 숲속에서 몬스터를 사냥하는, 짐승과도 같은 전문 사냥꾼의 모습이 상상되나요?</p>
-                <a class="morebtn btn_14px" href="#"></a>
-            </div>
-            <div class="hoverswitch4">
-                <h3>EXPLORER</h3>
-                <p class="p_16px">탐험가는 미개척지와 미궁, 던전을 탐험하고, 지고의 유적과 전설을 찾아 여행합니다.
-                    수집한 골동품을 팔아 일확천금을 노리거나, 전설의 용기사가 만든 신화급 무구를 찾아 새로운 용기사가 될 수도 있겠죠.</p>
-                <a class="morebtn btn_14px" href="#"></a>
-            </div>
-            <div class="hoverswitch5">
-                <h3>VAGABOND</h3>
-                <p class="p_16px">방랑기사는 엄연히 망명높은 기사지만, 그 어디에도 소속되지 않고 가난한, 낭만 있는 투사입니다.
-                    강인한 체력과 불굴의 의지를 가진 정의의 기사님을 찾는 사람들을 위해 최선을 다합니다. </p>
-                <a class="morebtn btn_14px" href="#"></a>
-            </div>
-            <div class="hoverswitch6">
-                <h3>YOU</h3>
-                <p class="p_16px">걸어갈 길이 반드시 잘 닦여있을 필요는 없는 법입니다. 
-                    무엇이든 해보세요. 도시의 이야기를 찾아다니고, 여행을 다니다 보면 당신만의 새로운 이야기가 쓰여질것입니다. </p>
-                <a class="morebtn btn_14px" href="#"></a>
+            <div class="workhover_container">
+                <div class="hoverswitch0">
+                    <h3>Adventure</h3>
+                    <p class="p_16px">이곳에 소개된 직업들은 아주 대략적인 분류에 불과합니다.<br>
+                        무기를 고르고, 인연을 만나고, 끝없는 여정에 오르게 될 당신이 그리는 이야기는 아무도 예상할 수 없겠죠.</p>
+                    <a class="morebtn btn_14px" href="#">더보기</a>
+                </div>
+                <div class="hoverswitch1">
+                    <h3>MERCENARY</h3>
+                    <p class="p_16px">전쟁이 벌어지고 피가 흐를 수록 용병이 할 일은 더욱 많을것입니다.<br>
+                        칼밥먹고 사는 더러운 놈이라는 소리를 듣지만, 아무렴 어떤가요? 피묻은 돈이 더욱 두둑한 법입니다.</p>
+                    <a class="morebtn btn_14px" href="#">더보기</a>
+                </div>
+                <div class="hoverswitch2">
+                    <h3>MAGICIAN</h3>
+                    <p class="p_16px">매지션은 자연의 마나와 소통하며 독특한 현상인 마법을 구현합니다.<br> 
+                        엄청 화려하고 멋있고, 또 강하기까지 합니다만, 그 뒤에서는 피나는 노력이 필요합니다.</p>
+                    <a class="morebtn btn_14px" href="#">더보기</a>
+                </div>
+                <div class="hoverswitch3">
+                    <h3>HUNTER</h3>
+                    <p class="p_16px">사냥꾼은 몬스터와 동물을 사냥하고, 그 부산물을 판매하는것으로 생활합니다.<br>
+                        새벽의 고요한 숲속에서 몬스터를 사냥하는, 짐승과도 같은 전문 사냥꾼의 모습이 상상되나요?</p>
+                    <a class="morebtn btn_14px" href="#">더보기</a>
+                </div>
+                <div class="hoverswitch4">
+                    <h3>EXPLORER</h3>
+                    <p class="p_16px">탐험가는 미개척지와 미궁, 던전을 탐험하고, 지고의 유적과 전설을 찾아 여행합니다.<br>
+                        수집한 골동품을 팔아 일확천금을 노리거나, 전설의 용기사가 만든 신화급 무구를 찾아 새로운 용기사가 될 수도 있겠죠.</p>
+                    <a class="morebtn btn_14px" href="#">더보기</a>
+                </div>
+                <div class="hoverswitch5">
+                    <h3>VAGABOND</h3>
+                    <p class="p_16px">방랑기사는 엄연히 망명높은 기사지만, 그 어디에도 소속되지 않고 가난한, 낭만 있는 투사이기도 합니다.<br>
+                        강인한 체력과 불굴의 의지를 가진 정의의 기사님을 찾는 사람들을 위해 최선을 다합니다.</p>
+                    <a class="morebtn btn_14px" href="#">더보기</a>
+                </div>
+                <div class="hoverswitch6">
+                    <h3>YOU</h3>
+                    <p class="p_16px">걸어갈 길이 반드시 잘 닦여있을 필요는 없는 법입니다.<br>
+                        무엇이든 해보세요. 도시의 이야기를 찾아다니고, 여행을 다니다 보면 당신만의 새로운 이야기가 쓰여질것입니다.</p>
+                    <a class="morebtn btn_14px" href="#">더보기</a>
+                </div>
             </div>
         </div>
     </section>
-    <section>
+    <section class="index_section5">
 
+        <h3>미디어</h3>
+        <p class="p_16px">당신의 이야기가 펼쳐질 세상을 사진과 영상으로 만나보세요</p>
+        <div id="wrapper">
+            <div id="carousel-list">
+                <div class="carousel-item1 carousel-item"></div>
+                <div class="carousel-item2 carousel-item"></div>
+                <div class="carousel-item3 carousel-item"></div>
+                <div class="carousel-item4 carousel-item"></div>
+                <div class="carousel-item5 carousel-item"></div>
+                <div class="carousel-item1 carousel-item"></div><!--무한루프용 한번 더-->
+                <div class="carousel-item2 carousel-item"></div>
+                <div class="carousel-item3 carousel-item"></div>
+                <div class="carousel-item4 carousel-item"></div>
+                <div class="carousel-item5 carousel-item"></div>
+            </div>
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+        <a class="startbtn">모험 시작하기</a>
     </section>
     <footer>
         <div class="footermenu"><!--flex, 좌우 끝 정렬로 벌리기-->
             <ul class="navbar">
                 <li><a href="#">이용약관</a></li>
+                <li class="line"></li>
                 <li><a href="#">개인정보처리방침</a></li>
+                <li class="line"></li>
                 <li><a href="#">문의하기</a></li>
+                <li class="line"></li>
                 <li><a href="#">사용자문제신고센터</a></li>
+                <li class="line"></li>
                 <li><a href="#">이벤트, 저작권 규약</a></li>
             </ul>
             <ul class="sns">
@@ -145,28 +181,95 @@
             </ul>
         </div>
         <div class="footerCaution">
-            <img src="" alt=""><!--겜 로고-->
+            <img src="https://i.ibb.co/wQMCW1g/glogo-white.png" alt="."><!--겜 로고-->
             <div class="footerimg">
-                <img src="" alt="R18"><!--18세경고-->
-                <img src="" alt="lang"><!--언어유해-->
-                <img src="" alt="violent"><!--폭력성-->
+                <img src="https://i.postimg.cc/VNmMYN3h/caution-copy.png" alt="R18"><!--18세경고-->
+                <img src="https://i.postimg.cc/9QGZ59NT/language-1.png" alt="lang"><!--언어유해-->
+                <img src="https://i.postimg.cc/vZRfNhXb/violence-1.png" alt="violent"><!--폭력성-->
             </div>
         </div>
         <div class="footerInfo">
-            <span class="footerInfo_nostring">TeamCyiva</span>
-            <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
-            <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
-            <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
-            <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
-            <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
-            <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            <div class="rolltext">
+                <span class="footerInfo_string">TeamCyiva</span>
+                <span class="footerInfo_string">대표자 : 성수민</span><!--string은 left stroke-->
+                <span class="footerInfo_string">사업자등록번호 : 000-88-10001</span><!--string은 left stroke-->
+                <span class="footerInfo_string">인천광역시 부평구 부흥로259번길 12</span><!--string은 left stroke-->
+                <span class="footerInfo_string">T : 010.8327.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">M : epwyqqu309@tukorea.ac.kr</span><!--string은 left stroke-->
+                <span class="footerInfo_string">F : 032.524.4785</span><!--string은 left stroke-->
+                <span class="footerInfo_string">통신판매업 신고번호 : 제2023-0001-123</span><!--string은 left stroke-->
+            </div>
         </div>
         <div class="sponsored">
-            <img src="https://i.postimg.cc/jjTZK8Lk/Audodesk-Gameware.png"><!--Autodesk Gameware-->
-            <img src="https://i.postimg.cc/MH59r1Wr/UE-Logo-horizontal-unreal-engine-white.png"><!--UE5-->
-            <img src="https://i.postimg.cc/xCT5NcGv/wwise-logo-rgb-7e17bcc5.png"><!--Wwise sound engine-->
+            <div class="container"><img src="https://i.postimg.cc/bw29GCyt/partner1.png"><!--Autodesk Gameware--></div>
+            <div class="container"><img src="https://i.postimg.cc/BQbg3ZRN/partner2.png"><!--UE5--></div>
+            <div class="container"><img src="https://i.postimg.cc/s2d95Yx0/partner3.png"><!--Wwise sound engine--></div>
         </div>
         <p class="footerCopy">Copyright TeamCyiva 2023 All Rights Reserved.</p>
     </footer>
 </body>
+
+<script>
+let currentHoverIndex = 0;
+
+function showHover(index) {
+  currentHoverIndex = index;
+  hideAllHovers();
+  const hoverswitch = document.querySelector(`.workhover_container .hoverswitch${currentHoverIndex}`);
+  hoverswitch.style.display = 'block';
+  // 투명도를 1로 설정하여 나타나는 애니메이션 적용
+  setTimeout(() => (hoverswitch.style.opacity = 1), 0);
+}
+
+function hideAllHovers() {
+  for (let i = 0; i <= 6; i++) {
+    const hoverswitch = document.querySelector(`.workhover_container .hoverswitch${i}`);
+    // 투명도를 0으로 설정하여 나타나는 애니메이션 없이 즉시 변경
+    if (i !== currentHoverIndex) {
+      hoverswitch.style.opacity = 0;
+      // 0.5초 후에 display를 none으로 변경
+      setTimeout(() => {
+        hoverswitch.style.display = 'none';
+      }, 0);
+    }
+  }
+}
+const wrapper = document.getElementById('wrapper');
+const carouselList = document.getElementById('carousel-list');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+let currentIndex = 0;
+
+prevBtn.addEventListener('click', () => {
+    changeSlide(-1);
+});
+
+nextBtn.addEventListener('click', () => {
+    changeSlide(1);
+});
+
+function changeSlide(direction) {
+    currentIndex += direction;
+
+    if (currentIndex < 0) {
+        currentIndex = carouselList.children.length / 2 - 1;
+    } else if (currentIndex >= carouselList.children.length / 2) {
+        currentIndex = 0;
+    }
+
+    const translateValue = -currentIndex * 10 + '%';
+    carouselList.style.transform = 'translateX(' + translateValue + ')';
+}
+
+carouselList.addEventListener('transitionend', () => {
+    if (currentIndex === carouselList.children.length / 2 - 1) {
+        carouselList.style.transition = 'none';
+        currentIndex = 0;
+        const translateValue = -currentIndex * 10 + '%';
+        carouselList.style.transform = 'translateX(' + translateValue + ')';
+        setTimeout(() => {
+            carouselList.style.transition = 'transform 0.5s ease';
+        });
+    }
+});
+</script>
