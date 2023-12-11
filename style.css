@@ -639,7 +639,7 @@ iframe{
 }
 
 .index_section4{
-    box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.79)
+    box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.79);
 }
 
 .index_section4 h2{
@@ -669,10 +669,17 @@ iframe{
 .char_image{
     display: flex;
     flex-grow: 1;
-    height: 750px;
+    height: 700px;
     background-repeat: no-repeat;
     transition: all 420ms ease-in-out;
 }
+
+@media(max-width: 1920px){
+    .char_image{
+        height: 550px;
+    }
+}
+
 
 .char_image:hover{
     flex-grow: 4;
