@@ -1342,6 +1342,15 @@ form {
     overflow: hidden;
 }
 
+.gears .margin_frame{
+    width: 100%;
+    margin: 0;
+}
+
+.armor_gears{
+    min-width: 630px;
+}
+
 /*일단 여기부터 무기칸 만들자*/
 
 .weapon_chart {

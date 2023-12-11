@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .postboard {
+      position: relative;
+      background-image: url('your-background-image-url.jpg');
+      width: 1000px; /* postboard의 가로 크기 설정 */
+      height: 600px; /* postboard의 세로 크기 설정 */
+    }
+
+    .postit,
+    .editable {
+      width: 300px;
+      height: 200px;
+      background-color: #dadada;
+      position: absolute;
+    }
+
+    .editable {
+      cursor: pointer; /* 수정 가능한 영역에 마우스를 가져다 놓으면 커서가 포인터로 변경됩니다. */
+    }
+
+    .noeditable {
+      cursor: default; /* noeditable 클래스일 때 커서를 기본 값으로 변경 */
+    }
+
+    .edit-button {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="postboard">
+    <div class="postit noeditable">엄<br>준<br>식</div>
+    <div class="postit noeditable">문득 한국공대를 다니다보니 대상혁이 새삼 대단함을 느낀다...</div>
+    <div class="postit noeditable">레이크타운 교회건물 벽뚫 버그 있어요 이거 수정좀</div>
+    <div class="postit noeditable">돈 수급처 초입 던전 개 창렬인데 이거 패치 언제함???뉴비 폐사한다;;</div>
+    <div class="postit noeditable">양심고백 롤드컵 결승은 제우스가 지렸다</div>
+    <div class="postit noeditable">여기 게임사 그래픽 팀은 밥먹고 그림만 그리냐? 비주얼 퀄리티 지리네;</div>
+    <div class="postit noeditable">초보자들 초반에 칼 비싼거 사지마라 진짜 구라안치고 초반에는 칼 쓸 일이 없음</div>
+    <div class="postit noeditable">망겜 언제 섭종하냐;<br>벌써 몇번째 리스폰임</div>
+    <div class="postit noeditable">게임 운영진 전부 모솔에 탈모임내가 봐서 암.</div>
+    <div class="postit noeditable">옆에 글 허위사실인듯ㅇㅇ;</div>
+    <div class="postit noeditable">서버 감자로 만들었음? 진짜 핑 튀는거 언제 고치냐? 확 튀겨벌라</div>
+    <div class="postit noeditable">사양 왤케높냐 이거 750ti 보내줘야되나;</div>
+    <div contenteditable="true" class="postit editable">새 포스트 내용 쓰기</div>
+    <button class="edit-button">편집 종료</button>
+  </div>
+
+  <div>
+    <input type="text" id="newPostitText" placeholder="새로운 포스트잇 내용 입력">
+    <button id="addPostitButton">입력</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const postits = document.querySelectorAll('.postit');
+      const postboard = document.querySelector('.postboard');
+      let isDragging = false;
+      let offsetX, offsetY, initialX, initialY, currentPostit;
+
+      postits.forEach(postit => {
+        setRandomPosition(postit);
+        postit.addEventListener('mousedown', (e) => startDragging(e, postit));
+      });
+
+      // Editable postit
+      const editablePostit = document.querySelector('.editable');
+      setRandomPosition(editablePostit);
+
+      editablePostit.addEventListener('mousedown', (e) => startDragging(e, editablePostit));
+
+      document.addEventListener('mouseup', stopDragging);
+
+      function setRandomPosition(element) {
+        const maxX = postboard.clientWidth - element.clientWidth;
+        const maxY = postboard.clientHeight - element.clientHeight;
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+
+        element.style.left = randomX + 'px';
+        element.style.top = randomY + 'px';
+      }
+
+      function startDragging(e, postit) {
+        isDragging = true;
+        currentPostit = postit;
+        const rect = postit.getBoundingClientRect();
+        offsetX = e.clientX - rect.left;
+        offsetY = e.clientY - rect.top;
+        initialX = e.clientX - offsetX;
+        initialY = e.clientY - offsetY;
+
+        postit.style.cursor = 'grabbing';
+      }
+
+      function stopDragging() {
+        isDragging = false;
+        if (currentPostit) {
+          currentPostit.style.cursor = 'grab';
+        }
+      }
+
+      document.addEventListener('mousemove', drag);
+
+      function drag(e) {
+        if (isDragging) {
+          const x = e.clientX - offsetX;
+          const y = e.clientY - offsetY;
+
+          const rect = currentPostit.getBoundingClientRect();
+          const maxX = postboard.clientWidth - rect.width;
+          const maxY = postboard.clientHeight - rect.height;
+
+          const adjustedX = Math.min(Math.max(x, 0), maxX);
+          const adjustedY = Math.min(Math.max(y, 0), maxY);
+
+          currentPostit.style.left = adjustedX + 'px';
+          currentPostit.style.top = adjustedY + 'px';
+        }
+      }
+
+      // Add new postit
+      const addPostitButton = document.getElementById('addPostitButton');
+
+      addPostitButton.addEventListener('click', addNewPostit);
+
+      function addNewPostit() {
+        const newPostitText = document.getElementById('newPostitText').value;
+        
+        if (newPostitText.trim() !== '') {
+          const newPostit = document.createElement('div');
+          newPostit.classList.add('postit', 'noeditable');
+          newPostit.innerHTML = newPostitText;
+
+          setRandomPosition(newPostit);
+
+          newPostit.addEventListener('mousedown', (e) => startDragging(e, newPostit));
+
+          postboard.appendChild(newPostit);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
