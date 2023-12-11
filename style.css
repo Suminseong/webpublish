@@ -1503,6 +1503,7 @@ form {
     flex-direction: column;
     justify-content: center;
     background-color: #101010;
+    padding: 50px 0 100px 0;
 }
 
 .epicauction{
@@ -1511,6 +1512,7 @@ form {
     flex-direction: column;
     justify-content: center;
     background-color: var(--black700);
+    padding: 50px 0 100px 0;
 }
 
 .uncommon{
@@ -1518,7 +1520,8 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--black600);
+    background-color: var(--black400);
+    padding: 50px 0 100px 0;
 }
 
 .uncommon h3{
@@ -1583,7 +1586,7 @@ form {
 }
 
 .auction_container img{
-    width: 222.25px;
+    width: 275px;
     height: auto;
     overflow: hidden;
 }
